@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  margin: auto;
+  width: 80%;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+code {
+  background-color: lightgray;
+}
+
+code p {
+  background-color: lightsteelblue;
+  border-left: 2px solid blue;
+  padding: 12px;
+}
+
+img {
+  background-color: blue;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
