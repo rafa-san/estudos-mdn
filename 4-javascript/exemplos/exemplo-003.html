@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Basics - Exemplo 003</title>
+  <style>
+    img {
+      width: 700px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Exemplo 003 - Trocando imagens com um click</h2>
+  <img src="assets/img-01.jpg" alt="imagem de uma mulher">
+
+  <script>
+    let minhaImagem = document.querySelector('img');
+
+    minhaImagem.onclick = function() {
+      let meuSrc = minhaImagem.getAttribute('src');
+      if (meuSrc === 'assets/img-01.jpg') {
+        minhaImagem.setAttribute ('src', 'assets/img-02.jpg');
+      } else {
+        minhaImagem.setAttribute ('src', 'assets/img-01.jpg');
+      }
+    }
+
+    /* 
+    Você armazena uma referência ao seu elemento <img> na variável minhaImagem. Depois, você faz a propriedade do manipulador de evento onclick dessa variável igual a uma função sem nome (uma função "anônima"). Agora, toda vez que esse elemento de imagem é clicado:
+
+    1. Você recupera o valor do atributo src da imagem.
+    2. Você usa uma condicional para checar se o valor src é igual ao caminho da imagem original:
+      2.1 Se for, você muda o valor de src para o caminho da segunda imagem, forçando a outra imagem a ser carregada dentro do elemento <img>.
+      2.2 Se não for (significando que já mudou), nós mudamos o valor src de volta ao caminho da imagem, para o estado original.
+    */
+  </script>
+</body>
+</html>
