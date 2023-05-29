@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/main.css">
+  <title>Exemplo 005</title>
+</head>
+
+<body>
+  <h1>JavaScript First Steps</h1>
+
+  <h2>What is JavaScript?</h2>
+
+  <button class="exemplo">Botão 1</button>
+  <hr>
+
+  <h2>Mesma funcionalidade do exemplo acima, mas com um código que "polui" o HTML</h2>
+  <button onclick="paragrafoBotao2()">Botão 2</button>
+  
+  <script>
+    // Botão 1
+    // Function: creates a new paragraph and appends it to the bottom of the HTML body.
+    function criarParagrafo() {
+      let para = document.createElement('p');
+      para.textContent = 'Você clicou no primeiro botão!';
+      document.body.appendChild(para);
+    }
+
+    /*
+      1. Get references to all the buttons on the page in an array format.
+      2. Loop through all the buttons and add a click event listener to each one.
+
+      When any button is pressed, the createParagraph() function will be run.
+    */
+
+    const botoes = document.querySelectorAll('.exemplo');
+
+    for (var i = 0; i < botoes.length; i++) {
+      botoes[i].addEventListener('click', criarParagrafo)
+    }
+
+    // Segundo exemplo
+    function paragrafoBotao2() {
+      let para2 = document.createElement('p');
+      para2.textContent = 'Você clicou no segundo botão!';
+      document.body.appendChild(para2);
+    }
+  </script>
+</body>
+
+</html>
