@@ -1,93 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Getting started with CSS</title>
-    <style>
-      p,
-      li {
-        color: green;
-      }
 
-      li {
-        list-style-type: "\1F44D";
-      }
+<head>
+  <meta charset="utf-8" />
+  <title>Getting started with CSS</title>
+  <style>
+    p,
+    li {
+      color: green;
+    }
 
-      .special {
-        color: orange;
-        font-weight: bold;
-      }
+    li {
+      list-style-type: "\1F44D";
+    }
 
-      li em {
-        color: rebeccapurple;
-      }
+    .special {
+      color: orange;
+      font-weight: bold;
+    }
 
-      h1 + p {
-        font-size: 200%;
-      }
+    li em {
+      color: rebeccapurple;
+    }
 
-      p span {
-        color: red;
-      }
+    h1 + p {
+      font-size: 200%;
+    }
 
-      a:link {
-        color: pink;
-      }
+    p span {
+      color: red;
+    }
 
-      a:visited {
-        color: green;
-      }
+    a:link {
+      color: pink;
+    }
 
-      a:hover {
-        text-decoration: none;
-      }
+    a:visited {
+      color: green;
+    }
 
-      article p span {
-        color: blue;
-      }
+    a:hover {
+      text-decoration: none;
+    }
 
-      h2 + ul + p {
-        background-color: powderblue;
-      }
+    article p span {
+      color: blue;
+    }
 
-      body h1 + p .speciale {
-        color: yellow;
-        background-color: black;
-        padding: 5px;
-      }
+    h2 + ul + p {
+      background-color: powderblue;
+    }
 
-    </style>
-  </head>
+    body h1 + p .speciale {
+      color: yellow;
+      background-color: black;
+      padding: 5px;
+    }
+    /* This will style any element with a class of special, which is inside a <p>, which comes just after an <h1>, which is inside a <body>. Phew! */
 
-  <body>
-    <h1>I am a level one heading</h1>
+  </style>
+</head>
 
-    <p>
-      This is a paragraph of text. In the text is a
-      <span class="speciale">span element</span> and also a
-      <a href="#">link</a>.
-    </p>
+<body>
+  <h1>I am a level one heading</h1>
 
-    <p>
-      This is the second paragraph. It contains an <em>emphasized</em> element.
-    </p>
+  <p>
+    This is a paragraph of text. In the text is a
+    <span class="speciale">span element</span> and also a
+    <a href="#">link</a>.
+  </p>
 
-    <article>
-      <p>Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Hic, explicabo?
-      </p>
-    </article>
+  <p>
+    This is the second paragraph. It contains an <em>emphasized</em> element.
+  </p>
 
-    <h2>Lorem ipsum dolor sit amet.</h2>
-
+  <article>
     <p>Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Hic, explicabo?
     </p>
+  </article>
 
-    <ul>
-      <li>Item <span>one</span></li>
-      <li class="special">Item two</li>
-      <li>Item <em>three</em></li>
-    </ul>
+  <h2>Lorem ipsum dolor sit amet.</h2>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quia.</p>
-  </body>
+  <p>Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Hic, explicabo?
+  </p>
+
+  <ul>
+    <li>Item <span>one</span></li>
+    <li class="special">Item two</li>
+    <li>Item <em>three</em></li>
+  </ul>
+
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quia.</p>
+</body>
 </html>
