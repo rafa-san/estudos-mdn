@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Variables: Task 2</title>
+  <style>
+    section p {
+      color: purple;
+      margin: 0.5em 0;
+    }
+  </style>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+  <h1>Variables 2</h1>
+  <p>In this task you need to add a new line to correct the value stored in the existing <code>myName</code> variable to your own name.</p>
+  <hr>
+  <section class="preview"></section>
+
+
+<script>
+  // Add your code here
+
+  let myName = 'Paul';
+  myName = 'Rafael';
+
+  // Don't edit the code below here!
+
+  const section = document.querySelector('section');
+
+  const para = document.createElement('p');
+  para.textContent = myName;
+  section.appendChild(para);
+</script>
+
+</body>
+
+</html>
