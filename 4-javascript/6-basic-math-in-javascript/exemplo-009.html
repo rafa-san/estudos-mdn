@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo 009</title>
+</head>
+
+<body>
+  <h2>Exemplo 009 - A Máquina</h2>
+
+  <p>A máquina está parada.</p>
+  <button>Iniciar a máquina</button>
+  
+
+  <script>
+    const btn = document.querySelector('button');
+    const txt = document.querySelector('p');
+
+    btn.addEventListener('click', updateBtn);
+
+    function updateBtn() {
+      if (btn.textContent === 'Iniciar a máquina') {
+        btn.textContent = 'Parar a máquina';
+        txt.textContent = 'A máquina iniciou!';
+      } else {
+        btn.textContent = 'Iniciar a máquina';
+        txt.textContent = 'A máquina está parada.'
+      }
+    }
+  </script>
+</body>
+
+</html>
