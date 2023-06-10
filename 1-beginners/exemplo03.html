@@ -1,30 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript Basics - Exemplo 003</title>
+  <title>JavaScript Basics</title>
+  <link rel="stylesheet" href="../style/main.css">
   <style>
+    div {
+      border: 2px solid purple;
+      height: 300px;
+    }
+
     img {
-      width: 700px;
+      display: block;
+      margin: auto;
+      padding-top: 16px;
     }
   </style>
 </head>
 
 <body>
-  <h2>Exemplo 003 - Trocando imagens com um click</h2>
-  <img src="assets/img-01.jpg" alt="imagem de uma mulher">
+  <h1>JavaScript Basics</h1>
+
+  <h2>Exemplo 03</h2>
+
+  <p>Trocando imagens com um click.</p>
+
+  <div><img src="assets/firefox-icon.png" alt="logo do firefox"></div>
 
   <script>
     let minhaImagem = document.querySelector('img');
 
     minhaImagem.onclick = function() {
       let meuSrc = minhaImagem.getAttribute('src');
-      if (meuSrc === 'assets/img-01.jpg') {
-        minhaImagem.setAttribute ('src', 'assets/img-02.jpg');
+      if (meuSrc === 'assets/firefox-icon.png') {
+        minhaImagem.setAttribute ('src', 'assets/firefox-icon-2.jpeg');
       } else {
-        minhaImagem.setAttribute ('src', 'assets/img-01.jpg');
+        minhaImagem.setAttribute ('src', 'assets/firefox-icon.png');
       }
     }
 

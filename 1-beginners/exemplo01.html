@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Basics</title>
+  <link rel="stylesheet" href="../style/main.css">
+  <style>
+    .exemplo {
+      border: 2px solid purple;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>JavaScript Basics</h1>
+
+  <h2>Exemplo 01</h2>
+  
+  <p>Escrever um texto no JavaScript para ser exibido no HTML.</p>
+  <p class="exemplo"></p>
+
+  <script>
+    const teste = document.querySelector('.exemplo'); 
+    /* 
+    A função querySelector() faz uma referência à class exemplo e a armazena numa variável chamada teste. Isso é muito parecido ao que fazemos usando seletores CSS. Quando queremos fazer algo em um elemento, primeiro você precisa selecioná-lo.
+    */
+    teste.textContent = 'Olá, mundo!'; 
+    /*
+    Aqui define-se o valor da propriedade textContent para "Olá, mundo!". Poderíamos usar também o innerHTML no lugar do textContent.
+    */
+  </script>
+</body>
+
+</html>
