@@ -25,10 +25,6 @@ summary {
   padding: 4px;
 }
 
-.principal li a {
-  background-color: lightgray;
-}
-
 .principal li:hover {
   background-color: rgba(128, 0, 128, 0.2);
 }
