@@ -1,10 +1,7 @@
 @charset "UTF-8";
 
-* {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: auto;
   width: 95%;
 }
@@ -20,19 +17,31 @@ summary {
   padding: 8px;
 }
 
-
-ul {
+.principal ul {
   list-style-type: disc;
 }
 
-li {
+.principal li {
   padding: 4px;
 }
 
-li a {
+.principal li a {
   background-color: lightgray;
 }
 
-li:hover {
+.principal li:hover {
   background-color: rgba(128, 0, 128, 0.2);
+}
+
+.atividade {
+  border: 2px solid purple;
+  margin: 24px 0;
+  padding: 8px;
+}
+
+.atividade h1,
+.atividade h2,
+.atividade h3,
+.atividade h4 {
+  color: purple;
 }
