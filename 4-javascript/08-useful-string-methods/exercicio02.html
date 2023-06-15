@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Useful string methods - Exercício 02</title>
+  <link rel="stylesheet" href="../../style/main.css">
+</head>
+
+<body>
+  <h1>Useful string methods - Exercício 02</h1>
+
+  <h2>Active learning</h2>
+
+  <div class="atividade">
+    <h3>Fixing capitalization</h3>
+    <div class="output">
+      <ul></ul>
+    </div>
+  </div>
+
+  <script>
+    const list = document.querySelector('.output ul');
+    list.innerHTML = '';
+    const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+
+    for (const city of cities) {
+      // write your code just below here
+    
+      const citiesLowerCase = city.toLowerCase();
+      console.log(citiesLowerCase);
+
+      //const firstLetter = citiesLowerCase[0]; deu certo dessa forma também.
+      const firstLetter = citiesLowerCase.slice(0, 1);
+      console.log(firstLetter);
+
+      const citiesUpperCase = citiesLowerCase.replace(firstLetter, firstLetter.toUpperCase());
+      console.log(citiesUpperCase);
+
+      const result = citiesUpperCase;
+      const listItem = document.createElement('li');
+      listItem.textContent = result;
+      list.appendChild(listItem);
+    }
+  </script>
+</body>
+
+</html>

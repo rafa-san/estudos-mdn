@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Useful string methods - Exercício 03</title>
+  <link rel="stylesheet" href="../../style/main.css">
+</head>
+
+<body>
+  <h1>Useful string methods - Exercício 03</h1>
+
+  <h2>Active learning</h2>
+
+  <div class="atividade">
+    <h3>Making new strings from old parts</h3>
+    <div class="output">
+      <ul></ul>
+    </div>
+  </div>
+
+  <script>
+    const list = document.querySelector('.output ul');
+    list.innerHTML = '';
+    const stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
+                      'GNF576746573fhdg4737dh4;Greenfield',
+                      'LIV5hg65hd737456236dch46dg4;Liverpool Lime Street',
+                      'SYB4f65hf75f736463;Stalybridge',
+                      'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
+
+    for (const station of stations) {
+      // write your code just below here
+
+      const stationCode = station.slice(0, 3);
+      console.log(stationCode);
+
+      const semicolon = station.indexOf(";");
+      console.log(semicolon);
+
+      const nameStation = station.slice(semicolon + 1);
+      console.log(nameStation);
+
+      const newName = `${stationCode}: ${nameStation}`;
+      console.log(newName);
+
+      const result = newName;
+      const listItem = document.createElement('li');
+      listItem.textContent = result;
+      list.appendChild(listItem);
+    }
+  </script>
+</body>
+
+</html>

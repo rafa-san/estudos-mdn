@@ -41,3 +41,13 @@ summary {
 .atividade h4 {
   color: purple;
 }
+
+.exemplo {
+  border: 2px solid gray;
+  padding: 8px;
+}
+
+code {
+  background-color: lightgray;
+  padding: 2px;
+}

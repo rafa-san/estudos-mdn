@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Useful string methods - Test your skills 04</title>
+  <link rel="stylesheet" href="../../style/main.css">
+</head>
+
+<body>
+  <h1>Useful string methods - Test your skills 04</h1>
+
+  <h2>Strings 4</h2>
+  
+  <div class="atividade"> 
+    <section></section> 
+  </div>
+
+  <script>
+    const theorem = 'Pythagorean theorem';
+
+    const a = 5;
+    const b = 8;
+
+    const myString = `Using ${theorem}, we can work out that if the two shortest sides of a right-angled triangle have lengths of ${a} and ${b}, the length of the hypotenuse is ${Math.sqrt(a**2 + b**2).toFixed(2)}.`;
+
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+
+    const para1 = document.createElement('p');
+    para1.textContent = myString;
+    section.appendChild(para1);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Useful string methods - Test your skills 03</title>
+  <link rel="stylesheet" href="../../style/main.css">
+</head>
+
+<body>
+  <h1>Useful string methods - Test your skills 03</h1>
+
+  <h2>Strings 3</h2>
+  
+  <div class="atividade"> 
+    <section></section> 
+  </div>
+
+  <script>
+    const quote = 'I dO nOT lIke gREen eGgS anD HAM';
+
+    // Add your code here
+    const fixedQuote = quote[0] + quote.slice(1).toLowerCase();
+    console.log(fixedQuote);
+
+    const finalQuote = `${fixedQuote.replace("green eggs and ham", "chicken")}.`;
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+
+    const para1 = document.createElement('p');
+    para1.textContent = fixedQuote;
+    const para2 = document.createElement('p');
+    para2.textContent = finalQuote;
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
+</body>
+
+</html>
