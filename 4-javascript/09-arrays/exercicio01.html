@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Arrays - Exercício 01</title>
+  <link rel="stylesheet" href="../../style/main.css">
+  <style>
+    li {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Arrays - Exercício 01</h1>
+
+  <h2>Active learning: Printing those products</h2>
+
+  <p>Let's return to the example we described earlier — printing out product names and prices on an invoice, then totaling the prices and printing them at the bottom. In the editable example below there are comments containing numbers — each of these marks a place where you have to add something to the code. They are as follows:</p>
+
+  <ol>
+    <li>Below the <code>// number 1</code> comment are a number of strings, each one containing a product name and price separated by a colon. We'd like you to turn this into an array and store it in an array called <code>products</code>.</li>
+
+    <li>Below the <code>// number 2</code> comment, start a <code>for...of()</code> loop to go through every item in the <code>products</code> array.</li>
+
+    <li>Below the <code>// number 3</code> comment we want you to write a line of code that splits the current array item (<code>name:price</code>) into two separate items, one containing just the name and one containing just the price. If you are not sure how to do this, consult the <strong>Useful string methods</strong> article for some help, or even better, look at the <strong>Converting between strings and arrays</strong> section of this article.</li>
+
+    <li>As part of the above line of code, you'll also want to convert the price from a string to a number. If you can't remember how to do this, check out the <strong>first strings article</strong>.</li>
+
+    <li>There is a variable called <code>total</code> that is created and given a value of 0 at the top of the code. Inside the loop (below <code>// number 4</code>) we want you to add a line that adds the current item price to that total in each iteration of the loop, so that at the end of the code the correct total is printed onto the invoice. You might need an <strong>assignment operator</strong> to do this.</li>
+
+    <li>We want you to change the line just below <code>// number 5</code> so that the <code>itemText</code> variable is made equal to "current item name — $current item price", for example "Shoes — $23.99" in each case, so the correct information for each item is printed on the invoice. This is just simple string concatenation, which should be familiar to you.</li>
+
+    <li>Finally, below the <code>// number 6</code> comment, you'll need to add a <code>}</code> to mark the end of the <code>for...of()</code> loop.</li>
+  </ol>
+  
+  <div class="atividade"> 
+    <section class="output">
+      <ul></ul>
+      <p></p>
+    </section> 
+  </div>
+
+  <script>
+    const list = document.querySelector('.output ul');
+    const totalBox = document.querySelector('.output p');
+    let total = 0;
+    list.innerHTML = '';
+    totalBox.textContent = '';
+    // number 1
+    const products = [
+                     'Underpants:6.99',
+                     'Socks:5.99',
+                     'T-shirt:14.99',
+                     'Trousers:31.99',
+                     'Shoes:23.99'
+                     ];
+    console.log(products);
+
+    // number 2
+    for (const product of products) {
+      //console.log(product);
+    
+      // number 3
+      const index = product.indexOf(":");
+      //console.log(index);
+
+      const name = product.slice(0, index);
+      //console.log(name);
+
+      const price = Number(product.slice(index + 1));
+      //console.log(typeof price);      
+
+      // number 4
+        total += price;
+
+      // number 5
+      let itemText = `${name} - $${price}`;
+  
+      const listItem = document.createElement('li');
+      listItem.textContent = itemText;
+      list.appendChild(listItem);
+    
+    // number 6
+    }
+    totalBox.textContent = 'Total: $' + total.toFixed(2);
+  </script>
+</body>
+
+</html>

@@ -44,6 +44,7 @@ summary {
 
 .exemplo {
   border: 2px solid gray;
+  max-width: 100%;
   padding: 8px;
 }
 

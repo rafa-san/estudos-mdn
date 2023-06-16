@@ -6,12 +6,46 @@
   <meta name="viewport" content="width=device-width">
   <title>Useful string methods - Test your skills 04</title>
   <link rel="stylesheet" href="../../style/main.css">
+  <style>
+    li ol {
+      list-style-type: upper-roman;
+    }
+
+    pre {
+      white-space: normal;
+    }
+  </style>
 </head>
 
 <body>
   <h1>Useful string methods - Test your skills 04</h1>
 
   <h2>Strings 4</h2>
+
+  <p>In the final string task, we have given you the name of a theorem, two numeric values, and an incomplete string (the bits that need adding are marked with asterisks (<code>*</code>)). We want you to change the value of the string as follows:</p>
+
+  <ol>
+    <li>Change it from a regular string literal into a template literal.</li>
+    <li>
+      Replace the four asterisks with four template literal placeholders. These should be:
+    <ol>
+      <li>The name of the theorem.</li>
+      <li>The two number values we have.</li>
+      <li>The length of the hypotenuse of a right-angled triangle, given that the two other side lengths are the same as the two values we have. You'll need to look up how to calculate this from what you have. Do the calculation inside the placeholder.</li>
+    </ol>
+  </li>
+  </ol>
+
+  <div class="exemplo">
+    <p>Using *, we can work out that that if the two shortest sides of a right-angled triangle have lengths of * and *, the length of the hypotenuse is *.</p>
+    <hr>
+    <pre>
+      const theorem = 'Pythagorean theorem';<br>
+      const a = 5;<br>
+      const b = 8;<br>
+      const myString = 'Using *, we can work out that that if the two shortest sides of a right-angled triangle have lengths of * and *, the length of the hypotenuse is *.';
+    </pre>
+  </div>
   
   <div class="atividade"> 
     <section></section> 

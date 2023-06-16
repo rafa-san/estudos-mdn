@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Arrays - Exemplo 01</title>
+  <link rel="stylesheet" href="../../style/main.css">
+</head>
+
+<body>
+  <h1>Arrays - Exemplo 01</h1>
+  
+  <div class="atividade"> 
+    <section></section> 
+  </div>
+
+  <script>
+    const sequence = [1, 1, 2, 3, 5, 8, 13];
+    console.log(sequence);
+
+
+    const random = ["tree", 795, [0, 1, 2]];
+    console.log(random);
+    console.log(random[2][2]);
+
+
+    const shopping = ["bread", "milk", "cheese", "hummus", "noodles"];
+    console.log(shopping);
+    console.log(shopping.length);
+    console.log(shopping[0]);
+    shopping[0] = "tahini";
+    console.log(shopping);
+
+
+    //indexOf
+    const birds = ["Parrot", "Falcon", "Owl"];
+    console.log(birds.indexOf("Owl")); //  2
+    console.log(birds.indexOf("Rabbit")); // -1
+
+
+    // push
+    const cities = ["Manchester", "Liverpool"];
+    cities.push("Cardiff");
+    console.log(cities); // [ "Manchester", "Liverpool", "Cardiff" ]
+    cities.push("Bradford", "Brighton");
+    console.log(cities); // [ "Manchester", "Liverpool", "Cardiff", "Bradford", "Brighton" ]
+
+    const cities2 = ["Manchester", "Liverpool"];
+    const newLength = cities2.push("Bristol");
+    console.log(cities2); // [ "Manchester", "Liverpool", "Bristol" ]
+    console.log(newLength); // 3
+
+
+    // unshift
+    cities2.unshift("Edinburgh");
+    console.log(cities2);
+
+
+    // pop
+    const sFighter = ["Ryu", "Ken", "Bison"];
+    const removido = sFighter.pop();
+    console.log(sFighter);
+    console.log(removido);
+
+
+    // shift
+    const removido2 = sFighter.shift();
+    console.log(sFighter);
+
+
+    // slice
+    const cidades = ["São Paulo", "Rio de Janeiro", "Curitiba", "Floripa"];
+    const index = cidades.indexOf("Curitiba");
+    console.log(cidades.indexOf("Floripa"));
+    if (index !== -1) {
+      cidades.splice(index, 1);
+    }
+    console.log(cidades);
+
+    /*
+    In this call to splice(), the first argument says where to start removing items, and the second argument says how many items should be removed. So you can remove more than one item:
+    */
+
+
+
+    const passaros = ["Parrot", "Falcon", "Owl"];
+
+    for (const passaro of passaros) {
+      console.log(passaro);
+    }
+
+
+
+    /*
+    Sometimes you will want to do the same thing to each item in an array, leaving you with an array containing the changed items. You can do this using map(). The code below takes an array of numbers and doubles each number:
+    */
+    function double(number) {
+      return number * 2;
+    }
+    const numbers = [5, 2, 7, 6];
+    const doubled = numbers.map(double);
+    console.log(numbers);
+    console.log(doubled); // [ 10, 4, 14, 12 ]
+
+
+
+    /*
+    Sometimes you'll want to create a new array containing only the items in the original array that match some test. You can do that using filter(). The code below takes an array of strings and returns an array containing just the strings that are greater than 8 characters long:
+    */
+
+    function isLong(city) {
+      return city.length > 8;
+    }
+
+    const cities3 = ["London", "Liverpool", "Totnes", "Edinburgh"];
+    const longer = cities3.filter(isLong);
+    console.log(longer); // [ "Liverpool", "Edinburgh" ]
+
+
+
+    // split - transforma string numa array
+    const data = "Manchester,London,Liverpool,Birmingham,Leeds,Carlisle";
+    console.log(typeof data);
+
+    const cidad = data.split(",");
+    console.log(cidad);
+    console.log(typeof cidad);
+
+    console.log(cidad.length);
+    console.log(cidad[0]); // the first item in the array
+    console.log(cidad[1]); // the second item in the array
+    console.log(cidad[cidad.length - 1]); // the last item in the array
+
+
+
+    // join
+    const exemplo1 = ["London", "Liverpool", "Totnes", "Edinburgh"];
+    const commaSeparated = exemplo1.join("&");
+    console.log(typeof commaSeparated);
+    console.log(commaSeparated);
+
+    const dogNames = ["Rocket", "Flash", "Bella", "Slugger"];
+    dogNames.toString(); // Rocket,Flash,Bella,Slugger
+    console.log(dogNames);
+
+    
+    
+
+
+    
+    const products = ['Underpants:6.99', 'Socks:5.99'];// Isso é uma array:
+    
+    for (const product of products) { 
+      //product transforma os dois itens da array em duas strings
+      //console.log(product)
+      //console.log(product[0])
+      //console.log(typeof product)
+
+      const subArray = product.split(":");
+      // split transforma as duas strings em duas arrays diferentes, cada uma com dois itens
+      //console.log(subArray);
+      
+      const name = subArray[0];
+      // name buscou somente o primeiro item da array
+      console.log(name);
+      const price = Number(subArray[1]);
+      // price buscou somente o segundo item da array
+      console.log(price);
+    }
+
+
+
+  </script>
+</body>
+
+</html>

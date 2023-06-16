@@ -6,12 +6,32 @@
   <meta name="viewport" content="width=device-width">
   <title>Useful string methods - Test your skills 03</title>
   <link rel="stylesheet" href="../../style/main.css">
+  <style>
+    pre {
+      white-space: wrap;
+    }
+  </style>
 </head>
 
 <body>
   <h1>Useful string methods - Test your skills 03</h1>
 
   <h2>Strings 3</h2>
+
+  <p>In the next string task, you are given the same quote that you ended up with in the previous task, but it is somewhat broken! We want you to fix and update it, like so:</p>
+
+  <ul>
+    <li>Change the casing to correct sentence case (all lowercase, except for upper case first letter). Store the new quote in a variable called <code>fixedQuote</code>.</li>
+    <li>In <code>fixedQuote</code>, replace "green eggs and ham" with another food that you really don't like.</li>
+    <li>There is one more small fix to do — add a full stop onto the end of the quote, and save the final version in a variable called <code>finalQuote</code>.</li>
+  </ul>
+
+  <div class="exemplo">
+    <pre>
+      const quote = 'I dO nOT lIke gREen eGgS anD HAM'; <br>
+      // Add your code here
+    </pre>
+  </div>
   
   <div class="atividade"> 
     <section></section> 
@@ -24,7 +44,7 @@
     const fixedQuote = quote[0] + quote.slice(1).toLowerCase();
     console.log(fixedQuote);
 
-    const finalQuote = `${fixedQuote.replace("green eggs and ham", "chicken")}.`;
+    const finalQuote = `${fixedQuote.replace("green eggs and ham", "chicken and onion")}.`;
 
     // Don't edit the code below here!
 
