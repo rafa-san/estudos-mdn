@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Useful string methods - Exercício 03</title>
+  <link rel="stylesheet" href="../../../style/main.css">
+</head>
+
+<body>
+  <h1>Useful string methods - Exercício 03</h1>
+
+  <h2>Active learning</h2>
+
+  <p>In this last exercise, the array contains a bunch of strings containing information about train stations in the North of England. The strings are data items that contain the three-letter station code, followed by some machine-readable data, followed by a semicolon, followed by the human-readable station name. For example:</p>
+
+  <code>MAN675847583748sjt567654;Manchester Piccadilly</code>
+
+  <p>We want to extract the station code and name, and put them together in a string with the following structure:</p>
+
+  <code>MAN: Manchester Piccadilly</code>
+
+  <p>We'd recommend doing it like this:</p>
+
+  <ul>
+    <li>Extract the three-letter station code and store it in a new variable.</li>
+    <li>Find the character index number of the semicolon.</li>
+    <li>Extract the human-readable station name using the semicolon character index number as a reference point, and store it in a new variable.</li>
+    <li>Concatenate the two new variables and a string literal to make the final string.</li>
+    <li>Change the value of the <code>result</code> variable to the final string, not the <code>station</code>.</li>
+  </ul>
+
+  <div class="exemplo">
+    <h3>Making new strings from old parts</h3>
+    <ul>
+      <li>MAN675847583748sjt567654;Manchester Piccadilly</li>
+      <li>GNF576746573fhdg4737dh4;Greenfield</li>
+      <li>LIV5hg65hd737456236dch46dg4;Liverpool Lime Street</li>
+      <li>SYB4f65hf75f736463;Stalybridge</li>
+      <li>HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield</li>
+    </ul>
+  </div>
+
+  <div class="atividade">
+    <h3>Making new strings from old parts</h3>
+    <div class="output">
+      <ul></ul>
+    </div>
+  </div>
+
+  <script>
+    const list = document.querySelector('.output ul');
+    list.innerHTML = '';
+    const stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
+                      'GNF576746573fhdg4737dh4;Greenfield',
+                      'LIV5hg65hd737456236dch46dg4;Liverpool Lime Street',
+                      'SYB4f65hf75f736463;Stalybridge',
+                      'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
+
+    for (const station of stations) {
+      // write your code just below here
+
+      const stationCode = station.slice(0, 3);
+      console.log(stationCode);
+
+      const semicolon = station.indexOf(";");
+      console.log(semicolon);
+
+      const nameStation = station.slice(semicolon + 1);
+      console.log(nameStation);
+
+      const newName = `${stationCode}: ${nameStation}`;
+      console.log(newName);
+
+      const result = newName;
+      const listItem = document.createElement('li');
+      listItem.textContent = result;
+      list.appendChild(listItem);
+    }
+  </script>
+</body>
+
+</html>

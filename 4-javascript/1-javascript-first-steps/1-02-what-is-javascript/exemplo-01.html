@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is JavaScript? - Exemplo 01</title>
+  <link rel="stylesheet" href="../../../style/main.css">
+  <style>
+    p {
+      background: rgba(0, 0, 200, 0.3);
+      border: 2px solid rgba(0, 0, 200, 0.6);
+      border-radius: 10px;
+      box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+      color: rgba(0, 0, 200, 0.6);
+      cursor: pointer;
+      padding: 8px 10px;
+      letter-spacing: 1px;
+      margin: 16px 0;
+      text-align: center;
+      text-transform: uppercase;
+      width: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>What is JavaScript? - Exemplo 01</h1>
+
+  <div class="atividade">
+    <p class="exemplo">Jogador 1: Seu nome</p>
+  </div>
+
+  <script>
+    const exe = document.querySelector('p');
+    exe.addEventListener('click', atualizarNome);
+
+    function atualizarNome() {
+      let nome = prompt('Insira um novo nome');
+      
+      if (nome === '') {
+        alert('Por favor, digite um nome ou um número para prosseguir.');
+        atualizarNome();
+      } else {
+        exe.textContent = `Jogador 1: ${nome}`;
+      }
+    }
+  </script>
+</body>
+
+</html>

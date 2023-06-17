@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic math in JavaScript - Exemplo 01</title>
+  <link rel="stylesheet" href="../../../style/main.css">
+</head>
+
+<body>
+  <h1>Basic math in JavaScript - Exemplo 01</h1>
+
+  <div class="atividade">
+    <section></section>
+  </div>
+  
+  <script>
+    const myInt = 5;
+    const myFloat = 6.665;
+    console.log(myInt);
+    console.log(typeof myInt);
+    console.log(myFloat);
+
+    const lotsOfDecimal = 1.23456789;
+    console.log(lotsOfDecimal);
+    const twoDecimalPlaces = lotsOfDecimal.toFixed(2);
+    console.log(twoDecimalPlaces)
+
+    let myNumber = '74';
+    console.log(myNumber += 3);
+    console.log(Number(myNumber) + 3);
+
+    let num1 = 4;
+    console.log(num1++); // aqui ele coloca o incremento
+    console.log(num1); // mas é aqui que aparece o número com o valor atualizado
+    console.log(++num1); // aqui ele já mostra o número "incrementado"
+
+    let x = 3; // x contains the value 3
+    let y = 4; // y contains the value 4
+    //x *= y; // x now contains the value 12
+    console.log(x *= y);
+
+    const secao = document.querySelector('section');
+    const para = document.createElement('p');
+    para.textContent = 'Criei esse parágrafo usando JavaScript!';
+    secao.appendChild(para);
+
+  </script>
+</body>
+
+</html>

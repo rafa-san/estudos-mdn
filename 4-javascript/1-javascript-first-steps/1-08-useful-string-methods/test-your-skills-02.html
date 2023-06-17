@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Useful string methods - Test your skills 02</title>
+  <link rel="stylesheet" href="../../../style/main.css">
+  <style>
+    pre {
+      white-space: wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Useful string methods - Test your skills 02</h1>
+
+  <h2>Strings 2</h2>
+
+  <p>In this task you are provided with two variables, <code>quote</code> and <code>substring</code>, which contain two strings. We would like you to:</p>
+
+  <ul>
+    <li>Retrieve the length of the quote, and store it in a variable called <code>quoteLength</code>.</li>
+    <li>Find the index position where <code>substring</code> appears in <code>quote</code>, and store that value in a variable called <code>index</code>.</li>
+    <li>Use a combination of the variables you have and available string properties/methods to trim down the original quote to "I do not like green eggs and ham.", and store it in a variable called <code>revisedQuote</code>.</li>
+  </ul>
+
+  <div class="exemplo">
+    <pre>
+      const quote = 'I do not like green eggs and ham. I do not like them, Sam-I-Am.'; <br>
+      const substring = 'green eggs and ham'; <br>
+      // Add your code here
+    </pre>
+  </div>
+  
+  <div class="atividade"> 
+    <section></section> 
+  </div>
+
+  <script>
+    const quote = 'I do not like green eggs and ham. I do not like them, Sam-I-Am.';
+    const substring = 'green eggs and ham';
+
+
+    // Add your code here
+    const quoteLength = quote.length;
+    console.log(quoteLength);
+    const index = quote.indexOf(substring);
+    console.log(index);
+
+    const revisedQuote = quote.slice(0, index + substring.length + 1);
+
+
+    // Don't edit the code below here!
+    const section = document.querySelector('section');
+
+    section.innerHTML = ' ';
+    const para1 = document.createElement('p');
+    para1.textContent = `The quote is ${ quoteLength } characters long.`;
+    const para2 = document.createElement('p');
+    para2.textContent = revisedQuote;
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
+</body>
+
+</html>
