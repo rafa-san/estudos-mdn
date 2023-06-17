@@ -6,15 +6,24 @@ body {
   width: 95%;
 }
 
-details {
+section.materia {
   border: 1px solid purple;
-  flex: 33%;
+  margin: 16px 0;
+  padding: 8px;
+}
+
+details {
   padding: 8px;
 }
 
 summary {
   background-color: rgba(128, 0, 128, 0.5);
+  font-size: 1.1em;
   padding: 8px;
+}
+
+summary:hover {
+  cursor: pointer;
 }
 
 .principal ul {
