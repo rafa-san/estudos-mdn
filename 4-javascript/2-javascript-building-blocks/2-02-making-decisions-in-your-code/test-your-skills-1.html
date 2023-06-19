@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Making decisions in your code - Test your skills 1</title>
+  <link rel="stylesheet" href="../../../style/main.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <h1>Making decisions in your code - Test your skills 1</h1>
+
+  <h2>Conditionals 1</h2>
+
+  <p>In this task you are provided with two variables:</p>
+
+  <ul>
+    <li>season — contains a string that says what the current season is.</li>
+    <li>response — begins uninitialized, but is later used to store a response that will be printed to the output panel.</li>
+  </ul>
+
+  <p>We want you to create a conditional that checks whether season contains the string "summer", and if so assigns a string to response that gives the user an appropriate message about the season. If not, it should assign a generic string to response that tells the user we don't know what season it is.</p>
+
+  To finish off, you should then add another test that checks whether season contains the string "winter", and again assigns an appropriate string to response.
+
+  <div class="atividade"> 
+  </div>
+
+  <script>
+    let season = 'outono';
+    let response;
+
+    // Add your code here
+    if (season === 'summer') {
+      response = 'verão';
+    } else if (season === 'winter') {
+      response = 'inverno';
+    } else {
+      response = 'não é verão';
+    } 
+
+    // Don't edit the code below here!
+    const section = document.querySelector('.atividade');
+
+    let para1 = document.createElement('p');
+    para1.textContent = response;
+    section.appendChild(para1);
+  </script>
+</body>
+
+</html>

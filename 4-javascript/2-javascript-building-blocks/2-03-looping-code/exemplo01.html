@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Looping code - Exemplo 01</title>
+  <link rel="stylesheet" href="../../../style/main.css">
+</head>
+
+<body>
+  <h1>Looping code - Exemplo 01</h1>
+  
+  <div class="atividade"> 
+    
+  </div>
+
+  <script>
+    const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+    
+    // for (const cat of cats) {
+    //   console.log(cat);
+    // }
+
+    // We could rewrite that code like this:
+    for (let i = 0; i < cats.length; i++) {
+      console.log(cats[i]);
+    }
+
+    // Passar para maiúsculas
+    // for (let i = 0; i < cats.length; i++) {
+    //   console.log(cats[i].toUpperCase());
+    // }
+
+
+
+
+
+
+    // MAP
+    function toUpper(string) {
+      return string.toUpperCase()
+    }
+
+    const upperCats = cats.map(toUpper);
+
+    console.log(upperCats);
+
+
+    // FILTER
+    function lCat (cat) {
+      return cat.startsWith('L');
+    }
+
+    const filtered = cats.filter(lCat);
+
+    console.log(filtered);
+
+   
+    // Outra forma de usar função
+    const filtered2 = cats.filter((cat) => cat.startsWith("L"));
+    console.log(filtered2);
+    // [ "Leopard", "Lion" ]
+
+
+    
+  </script>
+</body>
+
+</html>

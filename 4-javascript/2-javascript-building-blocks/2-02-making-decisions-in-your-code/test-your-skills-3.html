@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Making decisions in your code - Test your skills 3</title>
+  <link rel="stylesheet" href="../../../style/main.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <h1>Making decisions in your code - Test your skills 3</h1>
+
+  <h2>Conditionals 3</h2>
+
+  <P>In this task you need to take the code you wrote for the second task, and rewrite the inner if...else if...else to use a switch statement instead.</P>
+
+  <div class="atividade"> 
+    
+  </div>
+
+  <script>
+    let response;
+    let score = 75;
+    let machineActive = false;
+
+    if(machineActive) {
+      // Add your code here
+    } else {
+      response = 'The machine is turned off. Turn it on to process your score.';
+    }
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('.atividade');
+
+    let para1 = document.createElement('p');
+    let para2 = document.createElement('p');
+
+    para1.textContent = `Your score is ${ score }.`;
+    para2.textContent = response;
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
+</body>
+
+</html>

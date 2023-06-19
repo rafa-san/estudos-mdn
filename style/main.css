@@ -61,3 +61,7 @@ code {
   background-color: lightgray;
   padding: 2px;
 }
+
+li {
+  padding: 5px 0;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Making decisions in your code - Test your skills 2</title>
+  <link rel="stylesheet" href="../../../style/main.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <h1>Making decisions in your code - Test your skills 2</h1>
+
+  <h2>Conditionals 2</h2>
+
+  <p>For this task you are given three variables:</p>
+
+  <ul>
+    <li><code>machineActive</code> — contains an indicator of whether the answer machine is switched on or not (<code>true/false</code>)</li>
+    <li><code>score</code> — Contains your score in an imaginary game. This score is fed into the answer machine, which provides a response to indicate how well you did.</li>
+    <li><code>response</code> — begins uninitialized, but is later used to store a response that will be printed to the output panel.</li>
+  </ul>
+  
+  <p>You need to create an <code>if...else</code> structure that checks whether the machine is switched on and puts a message into the <code>response</code> variable if it isn't, telling the user to switch the machine on.</p>
+
+  <p>Inside the first <code>if...else</code>, you need to nest another <code>if...else</code> that puts appropriate messages into the <code>response</code> variable depending on what the value of score is — if the machine is turned on. The different conditional tests (and resulting responses) are as follows:</p>
+
+  <ul>
+    <li>Score of less than 0 or more than 100 — "This is not possible, an error has occurred."</li>
+    <li>Score of 0 to 19 — "That was a terrible score — total fail!"</li>
+    <li>Score of 20 to 39 — "You know some things, but it\'s a pretty bad score. Needs improvement."</li>
+    <li>Score of 40 to 69 — "You did a passable job, not bad!"</li>
+    <li>Score of 70 to 89 — "That\'s a great score, you really know your stuff."</li>
+    <li>Score of 90 to 100 — "What an amazing score! Did you cheat? Are you for real?"</li>
+  </ul>
+  
+  <p>After you've entered your code, try changing <code>machineActive</code> to <code>true</code>, to see if it works.</p>
+
+  <div class="atividade"> 
+    <!-- NÃO FINALIZEI -->
+  </div>
+
+  <script>
+    let response;
+    let score = 75;
+    let machineActive = false;
+  
+    // Add your code here
+
+    // Don't edit the code below here!
+    const section = document.querySelector('.atividade');
+
+    let para1 = document.createElement('p');
+    let para2 = document.createElement('p');
+
+    para1.textContent = `Your score is ${ score }`;
+    para2.textContent = response;
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
+</body>
+
+</html>

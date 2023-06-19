@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Making decisions in your code - Test your skills 4</title>
+  <link rel="stylesheet" href="../../../style/main.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <h1>Making decisions in your code - Test your skills 4</h1>
+
+  <h2>Conditionals 4</h2>
+
+  <p>For the final task you are given four variables:</p>
+
+  <ul>
+    <li><code>machineActive</code> — contains an indicator of whether the login machine is switched on or not (<code>true/false</code>).</li>
+    <li><code>pwd</code> — Contains the user's login password.</li>
+    <li><code>machineResult</code> — begins uninitialized, but is later used to store a response that will be printed to the output panel, letting the user know whether the machine is switched on.</li>
+    <li><code>pwdResult</code> — begins uninitialized, but is later used to store a response that will be printed to the output panel, letting the user know whether their login attempt was successful.</li>
+  </ul>
+  
+  <p>We'd like you to create an <code>if...else</code> structure that checks whether the machine is switched on and puts a message into the <code>machineResult</code> variable telling the user whether it is on or off.</p>
+
+  <p>If the machine is on, we also want a second conditional to run that checks whether the <code>pwd</code> is equal to <code>cheese</code>. If so, it should assign a string to <code>pwdResult</code> telling the user they logged in successfully. If not, it should assign a different string to <code>pwdResult</code> telling the user their login attempt was not successful. We'd like you to do this in a single line, using something that isn't an <code>if...else</code> structure.</p>
+
+  <div class="atividade"> 
+    
+  </div>
+
+  <script>
+    let machineActive = true;
+    let pwd = 'cheese';
+
+    let machineResult;
+    let pwdResult;
+
+    // Add your code here
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('.atividade');
+
+    let para1 = document.createElement('p');
+    let para2 = document.createElement('p');
+
+    para1.textContent = machineResult;
+    para2.textContent = pwdResult;
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Making decisions in your code - Exemplo 07</title>
+  <link rel="stylesheet" href="../../../style/main.css">
+</head>
+
+<body>
+  <h1>Making decisions in your code - Exemplo 07</h1>
+
+  <h2>Ternary operator</h2>
+
+  <div class="atividade"> 
+    <label for="theme">Select theme: </label>
+    <select id="theme">
+      <option value="white">White</option>
+      <option value="black">Black</option>
+    </select>
+
+    <h2>This is my website</h2>
+
+  </div>
+
+  <script>
+    const select = document.querySelector("select");
+    const html = document.querySelector("html");
+    const heading2 = document.querySelector(".atividade h2");
+    //document.body.style.padding = "10px";
+
+    function update(bgColor, textColor) {
+      html.style.backgroundColor = bgColor;
+      html.style.color = textColor;
+      heading2.style.color = textColor;
+    }
+
+    select.addEventListener("change", () =>
+      select.value === "black" ? update("black", "white") : update("white", "black")
+    );
+  </script>
+</body>
+
+</html>

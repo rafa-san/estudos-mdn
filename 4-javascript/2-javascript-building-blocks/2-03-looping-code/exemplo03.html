@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Looping code - Exemplo 03</title>
+  <link rel="stylesheet" href="../../../style/main.css">
+</head>
+
+<body>
+  <h1>Looping code - Exemplo 03</h1>
+  
+  <div class="atividade"> 
+    
+  </div>
+
+  <script>
+    // const cats = ["Pete", "Biggles", "Jasmine"];
+
+    // let myFavoriteCats = "My cats are called ";
+
+    // for (const cat of cats) {
+    //   myFavoriteCats += `${cat}, `;
+    // }
+
+    // console.log(myFavoriteCats); // "My cats are called Pete, Biggles, Jasmine, "
+
+    // The final output sentence isn't very well-formed:
+    // We'd prefer it to handle the last cat differently, like this:
+    // My cats are called Pete, Biggles, and Jasmine.
+
+
+    // Outra forma
+    const cats = ["Pete", "Biggles", "Jasmine"];
+
+    let myFavoriteCats = "My cats are called ";
+
+    for (let i = 0; i < cats.length; i++) {
+      if (i === cats.length - 1) {
+        // We are at the end of the array
+        myFavoriteCats += `and ${cats[i]}.`;
+      } else {
+        myFavoriteCats += `${cats[i]}, `;
+      }
+    }
+
+    console.log(myFavoriteCats); // "My cats are called Pete, Biggles, and Jasmine."
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Making decisions in your code - Exemplo 01</title>
+  <link rel="stylesheet" href="../../../style/main.css">
+</head>
+
+<body>
+  <h1>Making decisions in your code - Exemplo 01</h1>
+
+  <h2>A real example</h2>
+
+  <p>To understand this syntax better, let's consider a real example. Imagine a child being asked for help with a chore by their mother or father. The parent might say "Hey sweetheart! If you help me by going and doing the shopping, I'll give you some extra allowance so you can afford that toy you wanted." In JavaScript, we could represent this like so:</p>
+  
+  <div class="atividade"> 
+    <label for="shopping-check">Has the shopping been done? </label>
+    <input type="checkbox" id="shopping-check">
+    <p></p>
+  </div>
+
+  <script>
+    const checkBox = document.querySelector('input');
+    const para = document.querySelector('.atividade p');
+    let shoppingDone = false;
+
+    checkBox.addEventListener('change', () => {
+      checkBox.disabled = true;
+      shoppingDone = true;
+      updateAllowance();
+    });
+
+    function updateAllowance() {
+      let childsAllowance;
+      // We don't need to explicitly specify 'shoppingDone === true'
+      // if (shoppingDone) {
+      if (shoppingDone === true) {
+        childsAllowance = 10;
+      } else {
+        childsAllowance = 5;
+      }
+
+      para.textContent = `Child has earned \$${childsAllowance} this week.`;
+    }
+
+    updateAllowance();
+  </script>
+</body>
+
+</html>
