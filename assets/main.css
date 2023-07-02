@@ -6,13 +6,8 @@ body {
   width: 95%;
 }
 
-section.materia {
-  border: 1px solid rgb(128, 0, 128);
-  margin: 16px 0;
-  padding: 8px;
-}
-
 details {
+  border: 1px solid rgb(128, 0, 128);
   padding: 8px;
 }
 
@@ -24,6 +19,10 @@ summary {
 
 summary:hover {
   cursor: pointer;
+}
+
+.principal {
+  margin: 8px 0 16px;
 }
 
 .principal ul {
