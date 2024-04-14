@@ -1,40 +1,55 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/main.css">
+  <meta charset="utf-8" />
+  <meta name="description" content="Anotações que faço com o material de estudo do site MDN" />
+  <meta name="author" content="Rafael Santana" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página Inicial</title>
+  <link rel="stylesheet" href="styles/global-styles.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
 </head>
 
 <body>
-  <h1>CSS Guide</h1>
-  
-  <div class="principal">
-    <h2>CSS - Styling the web</h2>
-    <details open>
-      <summary>CSS first steps</summary>
-      <ol>
-        <li>CSS first steps overview</li>
-        <li>What is CSS?</li>
-        <li>
-          Getting started with CSS
-          <ul>
-            <li><a href="1-css-first-steps/03-getting-started-with-css/exemplo-01.html">Exemplo 01</a></li>
-          </ul>
-        </li>
-        <li>How CSS is structured</li>
-        <li>How CSS works</li>
-        <li>
-          Styling a biography page
-          <ul>
-            <li><a href="1-css-first-steps/06-styling-a-biography-page/exercicio01.html">Exercício 1</a></li>
-          </ul>
-        </li>
-      </ol>
-    </details>
-  </div>
+  <header>
+    <h1>Estudos &lt;MDN&#47;&gt;</h1>
+    <nav>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li><a href="03-javascript/01-javascript-basics/exemplo-01.html">JavaScript</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HTML section -->
+    <section class="materia">
+      <h2>HTML</h2>
+      <p>HTML (HyperText Markup Language) is the code that is used to structure a web page and its content.</p>
+      <p>HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on.</p>
+    </section>
+
+    <!-- CSS section -->
+    <section class="materia">
+      <h2>CSS</h2>
+      <p>CSS (Cascading Style Sheets) is the code that styles web content.</p>
+      <p>Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language. CSS is what you use to selectively style HTML elements.</p>
+    </section>
+
+    <!-- JS section -->
+    <section class="materia">
+      <h2>JavaScript</h2>
+      <p><a href="03-javascript/javascript-home.html">Conhecer</a></p>
+    </section>
+  </main>
+
+  <footer>
+    Desenvolvido por Rafa Santana
+  </footer>
 </body>
 
 </html>
