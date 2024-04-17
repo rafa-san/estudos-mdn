@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.container-principal {
+  margin-top: 70px;
+  min-height: 70vh;
+  padding: 16px 8px;
+}
+
+.container-conteudo {
+  margin-top: 16px;
+  padding: 8px;
+}
+
+.conteudo {
+  background-color: #ffffff;
+  padding: 24px 0;
+}
+
+.conteudo p,
+.conteudo ol {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.conteudo ol {
+  list-style-type: decimal;
+}
+
+.conteudo ol li {
+  padding: 8px 0;
+}
