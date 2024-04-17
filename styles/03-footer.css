@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+.footer-index,
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 32px 8px;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.contato {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.fa-github,
+.fa-linkedin {
+  font-size: 1.3em;
+  /* text-shadow: 1px 1px 1px #1f1f1f; */
+  transition: 0.3s ease-out;
+}
+
+.fa-github:hover,
+.fa-linkedin:hover {
+  transform: translateY(6px); 
+}
+
+.texto-icone {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  word-spacing: 2px;
+}
