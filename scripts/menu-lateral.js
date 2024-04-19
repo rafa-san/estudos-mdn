@@ -3,9 +3,8 @@ const icone = document.getElementById('menu-icone');
 icone.addEventListener('click', menuResponsivo);
 
 function menuResponsivo() {
-  // const icone = document.getElementById('menu-icone');
   const menuLateral = document.getElementById('menu-lateral');
-  menuLateral.classList.toggle('largura');
+  menuLateral.classList.toggle('responsivo');
 
   icone.classList.toggle("mudar");
 
