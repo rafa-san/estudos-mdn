@@ -9,7 +9,7 @@ footer {
 }
 
 footer p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-align: center;
 }
 
@@ -22,7 +22,7 @@ footer p {
 
 .fa-github,
 .fa-linkedin {
-  font-size: 1.3em;
+  font-size: 1.2em;
   /* text-shadow: 1px 1px 1px #1f1f1f; */
   transition: 0.3s ease-out;
 }
@@ -34,6 +34,6 @@ footer p {
 
 .texto-icone {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.2em;
+  font-size: 1.1em;
   word-spacing: 2px;
 }

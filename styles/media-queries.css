@@ -10,30 +10,14 @@
     text-align: center;
   }
 
-  header {
-    flex-direction: row;
-  }
-
-  h1 {
-    width: 50%;
-  }
-
-  #menu-superior {
-    display: block;
-  }
-
-  #menu-superior ul li {
-    padding: 0 16px
-  }
-
   #menu-icone {
     display: none;
   }
 
+
   /* MENU LATERAL */
-  .menu-lateral-responsivo {
-    /* top: 55px; */
-    width: 240px;
+  #menu-lateral {
+    width: 260px;
   }
 
 
@@ -42,7 +26,7 @@
 
   /* CONTEÚDO: INTRODUÇÃO, EXEMPLOS E EXERCÍCIOS */
   .container-principal {
-    margin-left: 240px;
+    margin-left: 260px;
   }
 
   /* FOOTER */
@@ -52,7 +36,7 @@
   }
 
   footer {
-    margin-left: 237px;
-    width: calc(100% - 240px);
+    margin-left: 260px;
+    width: calc(100% - 260px);
   }
 }

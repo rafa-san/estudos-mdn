@@ -11,9 +11,16 @@
   padding: 8px;
 }
 
+.container-conteudo h2 {
+  padding: 0 8px;
+}
+
 .conteudo {
-  background-color: #ffffff;
-  padding: 24px 0;
+  padding: 24px 8px;
+}
+
+.conteudo p {
+  margin: 8px 0;
 }
 
 .conteudo p,
@@ -28,4 +35,11 @@
 
 .conteudo ol li {
   padding: 8px 0;
+}
+
+/* ATIVIDADES */
+.atividade {
+  background-color: lightyellow;
+  border: 3px solid yellow;
+  padding: 16px;
 }

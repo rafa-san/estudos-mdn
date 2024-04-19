@@ -17,10 +17,6 @@ header h1 {
   text-align: center;
 }
 
-#menu-superior {
-  display: none;
-}
-
 header ul {
   display: flex;
   justify-content: space-between;
