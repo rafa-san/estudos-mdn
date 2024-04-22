@@ -8,19 +8,20 @@
 
 .container-conteudo {
   margin-top: 16px;
-  padding: 8px;
+  padding: 2px;
 }
 
 .container-conteudo h2 {
-  padding: 0 8px;
+  padding: 0 2px;
 }
 
 .container-conteudo h3 {
-  padding: 24px 8px 0 8px;
+  padding: 24px 2px 16px 2px;
 }
 
 .conteudo {
-  padding: 24px 8px;
+  padding: 2px;
+  width: 95%;
 }
 
 .conteudo p {
