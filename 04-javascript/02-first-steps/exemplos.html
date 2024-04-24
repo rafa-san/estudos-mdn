@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="../../../styles/03-footer.css" />
   <link rel="stylesheet" href="../../../styles/05-menu-lateral.css" />
   <link rel="stylesheet" href="../../../styles/06-materias-home.css" />
+  <link rel="stylesheet" href="../../../styles/07-atividades.css" />
   <link rel="stylesheet" href="../../../styles/media-queries.css" />
   <style>
     button {
@@ -90,19 +91,16 @@
       </li>
       <li>
         <details open>
-          <summary>JavaScript</summary>
+          <summary>JavaScript — Dynamic client-side scripting</summary>
           <ul class="ul-menu">
             <li>
-              <a href="../../javascript-home.html">Apresentação</a>
+              <a href="../javascript-home.html">Apresentação</a>
             </li>
             <li>
               <span class="subdivisao">JavaScript Basics</span>
               <ul class="ul-interno-menu">
                 <li>
-                  <a href="../01-basics/exemplo-01.html" title="Olá, mundo!">Exemplo 01</a>
-                </li>
-                <li>
-                  <a href="../01-basics/exemplo-02.html" title="Stop poking me!">Exemplo 02</a>
+                  <a href="../01-basics/exemplos.html">Exemplos</a>
                 </li>
               </ul>
             </li>
@@ -110,7 +108,7 @@
               <span class="subdivisao">JavaScript First Steps</span>
               <ul class="ul-interno-menu">
                 <li class="link-ativo">
-                  <a href="exemplo-01.html" title="Olá, mundo!">Exemplo 01</a>
+                  <a href="exemplos.html">Exemplos</a>
                 </li>
               </ul>
             </li>
@@ -123,12 +121,21 @@
   <main class="container-principal">
     <div class="container-conteudo">
       <h2>JavaScript First Steps</h2>
-      <h3>Exemplo 01</h3>
+      <h3>Exemplo 01: Escolha o nome do jogador</h3>
         <div class="conteudo">
-          <p></p>
+          <p>Clique no botão abaixo para mudar o nome do jogador.</p>
           <div class="atividade">
             <button type="button">Player 1: Rafa</button>
             <p class="retorno"></p>
+          </div>
+        </div>
+
+        <h3>Exemplo 02</h3>
+        <div class="conteudo">
+          <p>Ao clicar em um dos botões abaixo, o código irá criar um novo parágrafo e identificar qual dos botões foi clicado.</p>
+          <div id="exemplo2" class="atividade">
+            <button id="botao1">Botão 1</button>
+            <button id="botao2">Botão 2</button>
           </div>
         </div>
     </div>
@@ -149,16 +156,7 @@
 
   <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
   <script src="../../../scripts/menu-lateral.js"></script>
-  <script>
-    const button = document.querySelector('button');
-
-    button.addEventListener('click', updateName);
-
-    function updateName() {
-      const name = prompt('Enter a new name');
-      button.textContent = `Player 1: ${name}`;
-    }
-  </script>
+  <script src="../../scripts/04-javascript/02-first-steps.js"></script>
 </body>
 
 </html>

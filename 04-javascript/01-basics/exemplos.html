@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="../../../styles/03-footer.css" />
   <link rel="stylesheet" href="../../../styles/05-menu-lateral.css" />
   <link rel="stylesheet" href="../../../styles/06-materias-home.css" />
+  <link rel="stylesheet" href="../../../styles/07-atividades.css" />
   <link rel="stylesheet" href="../../../styles/media-queries.css" />
 </head>
 
@@ -74,19 +75,16 @@
       </li>
       <li>
         <details open>
-          <summary>JavaScript</summary>
+          <summary>JavaScript — Dynamic client-side scripting</summary>
           <ul class="ul-menu">
             <li>
-              <a href="../../javascript-home.html">Apresentação</a>
+              <a href="../javascript-home.html">Apresentação</a>
             </li>
             <li>
               <span class="subdivisao">JavaScript Basics</span>
               <ul class="ul-interno-menu">
                 <li class="link-ativo">
-                  <a href="exemplo-01.html" title="Olá, mundo!">Exemplo 01</a>
-                </li>
-                <li>
-                  <a href="exemplo-02.html" title="Stop poking me!">Exemplo 02</a>
+                  <a href="exemplos.html">Exemplos</a>
                 </li>
               </ul>
             </li>
@@ -94,7 +92,7 @@
               <span class="subdivisao">JavaScript First Steps</span>
               <ul class="ul-interno-menu">
                 <li>
-                  <a href="../02-first-steps/exemplo-01.html" title="Player 1">Exemplo 01</a>
+                  <a href="../02-first-steps/exemplos.html">Exemplos</a>
                 </li>
               </ul>
             </li>
@@ -107,10 +105,19 @@
   <main class="container-principal">
     <div class="container-conteudo">
       <h2>JavaScript Basics</h2>
-      <h3>Exemplo 01</h3>
+      <h3>Exemplo 01: Olá Mundo</h3>
         <div class="conteudo">
           <p>Exibir um texto na página HTML usando JavaScript.</p>
           <div class="atividade">
+            <p class="retorno"></p>
+          </div>
+        </div>
+
+        <h3>Exemplo 02: Stop poking me!</h3>
+        <div class="conteudo">
+          <p>Trabalhando com eventos.</p>
+          <p>Clique em qualquer lugar dentro da área colorida abaixo para ver o que acontece.</p>
+          <div id="exemplo2" class="atividade">
             <p class="retorno"></p>
           </div>
         </div>
@@ -132,7 +139,7 @@
 
   <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
   <script src="../../../scripts/menu-lateral.js"></script>
-  <script src="../../../scripts/04-javascript/01-basics/exemplo-01.js"></script>
+  <script src="../../../scripts/04-javascript/01-basics.js"></script>
 </body>
 
 </html>
