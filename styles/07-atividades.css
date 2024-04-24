@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.atividade {
+  background-color: #faf8f5;
+  border: 3px solid #efece9;
+  padding: 16px;
+}
+
+.atividade p {
+  font-size: 15px;
+  text-align: center;
+}
