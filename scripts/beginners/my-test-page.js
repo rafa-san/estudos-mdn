@@ -1,6 +1,6 @@
 // Alteração das imagens ao serem clicadas
 
-let myImage = document.querySelector('img');
+const myImage = document.querySelector('img');
 
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
@@ -28,20 +28,28 @@ Caso contrário, se o caminho da imagem atual não for '../images/firefox-icon-1
 
 // Mensagem de boas-vindas
 
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
+const myButton = document.querySelector('button');
+const myHeading = document.querySelector('h1');
 
 function setUserName() {
-  const myName = prompt("Please enter your name.");
-  localStorage.setItem("name", myName);
-  myHeading.textContent = `Mozilla is cool, ${myName}`;
+  let myName = prompt('Please enter your name.');
+  if(!myName) {
+    setUserName();
+  } else {
+    localStorage.setItem('name', myName);
+    myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+  }
 }
 
-if (!localStorage.getItem("name")) {
+if(!localStorage.getItem('name')) {
   setUserName();
 } else {
-  const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Mozilla is cool, ${storedName}`;
+  let storedName = localStorage.getItem('name');
+  myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
+}
+
+myButton.onclick = function() {
+  setUserName();
 }
 
 /*
