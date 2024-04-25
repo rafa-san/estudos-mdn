@@ -8,34 +8,18 @@
   <meta name="author" content="Rafael Santana" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Estudos MDN - JavaScript - JavaScript First Steps - Exemplo 01</title>
-  <link rel="stylesheet" href="../../../styles/01-global-styles.css" />
-  <link rel="stylesheet" href="../../../styles/02-header.css" />
-  <link rel="stylesheet" href="../../../styles/03-footer.css" />
-  <link rel="stylesheet" href="../../../styles/05-menu-lateral.css" />
-  <link rel="stylesheet" href="../../../styles/06-materias-home.css" />
-  <link rel="stylesheet" href="../../../styles/07-atividades.css" />
-  <link rel="stylesheet" href="../../../styles/media-queries.css" />
-  <style>
-    button {
-      display: block;
-      background-color: rgb(0 217 217 / 60%);
-      border: 2px solid rgb(200 200 0 / 60%);
-      border-radius: 10px;
-      box-shadow: 1px 1px 2px rgb(0 0 200 / 40%);
-      color: rgb(100 0 0 / 100%);
-      cursor: pointer;
-      font-family: "helvetica neue", helvetica, sans-serif;
-      letter-spacing: 1px;
-      margin: auto;
-      padding: 16px 24px;
-      text-transform: uppercase;
-    }
-  </style>
+  <link rel="stylesheet" href="../../styles/01-global-styles.css" />
+  <link rel="stylesheet" href="../../styles/02-header.css" />
+  <link rel="stylesheet" href="../../styles/03-footer.css" />
+  <link rel="stylesheet" href="../../styles/05-menu-lateral.css" />
+  <link rel="stylesheet" href="../../styles/06-materias-home.css" />
+  <link rel="stylesheet" href="../../styles/07-atividades.css" />
+  <link rel="stylesheet" href="../../styles/media-queries.css" />
 </head>
 
 <body>
   <header>
-    <h1><a href="../../../index.html">Estudos &lt;MDN&#47;&gt;</a></h1>
+    <h1><a href="../../index.html">Estudos &lt;MDN&#47;&gt;</a></h1>
 
     <div id="menu-icone" title="Abrir Menu Lateral">
       <div class="linha-1"></div>
@@ -51,10 +35,10 @@
           <summary>Beginners</summary>
           <ul class="ul-menu">
             <li>
-              <a href="../../../01-beginners/beginners-home.html">Apresentação</a>
+              <a href="../../01-beginners/beginners-home.html">Apresentação</a>
             </li>
             <li>
-              <a href="../../../01-beginners/my-test-page.html" target="_blank">My test page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="../../01-beginners/my-test-page.html" target="_blank">My test page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </li>
           </ul>
         </details>
@@ -64,7 +48,7 @@
           <summary>HTML — Structuring the web</summary>
           <ul class="ul-menu">
             <li>
-              <a href="../../../02-html/html-home.html">Apresentação</a>
+              <a href="../../02-html/html-home.html">Apresentação</a>
             </li>
             <li>
               <span class="subdivisao">Introdução ao HTML</span>
@@ -79,7 +63,7 @@
           <summary>CSS — Styling the web</summary>
           <ul class="ul-menu">
             <li>
-              <a href="../../../03-css/css-home.html">Apresentação</a>
+              <a href="../../03-css/css-home.html">Apresentação</a>
             </li>
             <li>
               <span class="subdivisao">CSS first steps</span>
@@ -121,23 +105,32 @@
   <main class="container-principal">
     <div class="container-conteudo">
       <h2>JavaScript First Steps</h2>
-      <h3>Exemplo 01: Escolha o nome do jogador</h3>
-        <div class="conteudo">
-          <p>Clique no botão abaixo para mudar o nome do jogador.</p>
-          <div class="atividade">
-            <button type="button">Player 1: Rafa</button>
-            <p class="retorno"></p>
-          </div>
-        </div>
 
-        <h3>Exemplo 02</h3>
-        <div class="conteudo">
-          <p>Ao clicar em um dos botões abaixo, o código irá criar um novo parágrafo e identificar qual dos botões foi clicado.</p>
-          <div id="exemplo2" class="atividade">
-            <button id="botao1">Botão 1</button>
-            <button id="botao2">Botão 2</button>
-          </div>
+      <h3>Exemplo 01</h3>
+      <div class="conteudo">
+        <p>Clique no botão abaixo para mudar o nome do jogador.</p>
+        <div id="exemplo01" class="atividade">
+          <button type="button">Player 1: Rafa</button>
         </div>
+      </div>
+
+      <h3>Exemplo 02</h3>
+      <div class="conteudo">
+        <p>Ao clicar em um dos botões abaixo, o código irá criar um novo parágrafo e identificar qual botão foi clicado.</p>
+        <div id="exemplo02" class="atividade">
+          <button id="botao1">Botão 1</button>
+          <button id="botao2">Botão 2</button>
+        </div>
+      </div>
+
+      <h3>Exemplo 03</h3>
+      <div class="conteudo">
+        <p>Nesse exemplo, o script foi escrito apenas para criar os parágrafos, sem identificar qual botão foi clicado.</p>
+        <div id="exemplo03" class="atividade">
+          <button id="botao3">Botão 3</button>
+          <button id="botao4">Botão 4</button>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -155,7 +148,7 @@
   </footer>
 
   <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
-  <script src="../../../scripts/menu-lateral.js"></script>
+  <script src="../../scripts/menu-lateral.js"></script>
   <script src="../../scripts/04-javascript/02-first-steps.js"></script>
 </body>
 
