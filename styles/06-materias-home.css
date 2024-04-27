@@ -7,8 +7,9 @@
 }
 
 .container-conteudo {
-  margin-top: 16px;
+  margin: 8px auto 0;
   padding: 2px;
+  width: 95%;
 }
 
 .container-conteudo h2 {
@@ -39,5 +40,5 @@
 }
 
 .conteudo ol li {
-  padding: 8px 0;
+  padding: 8px 16px;
 }
