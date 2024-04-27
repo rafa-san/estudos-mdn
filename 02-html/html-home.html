@@ -1,138 +1,142 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rafael Santana" />
+    <meta name="description" content="Exemplos e exercícios do site MDN Web Docs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudos MDN - HTML - Página Inicial</title>
+    <link rel="stylesheet" href="../styles/01-global-styles.css" />
+    <link rel="stylesheet" href="../styles/02-header.css" />
+    <link rel="stylesheet" href="../styles/03-footer.css" />
+    <link rel="stylesheet" href="../styles/05-menu-lateral.css" />
+    <link rel="stylesheet" href="../styles/06-materias-home.css" />
+    <link rel="stylesheet" href="../styles/media-queries.css" />
+    <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous" defer></script>
+    <script src="../scripts/menu-lateral.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Anotações que faço com o material de estudo do site MDN" />
-  <meta name="author" content="Rafael Santana" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Estudos MDN - HTML - Página Inicial</title>
-  <link rel="stylesheet" href="../styles/01-global-styles.css" />
-  <link rel="stylesheet" href="../styles/02-header.css" />
-  <link rel="stylesheet" href="../styles/03-footer.css" />
-  <link rel="stylesheet" href="../styles/05-menu-lateral.css" />
-  <link rel="stylesheet" href="../styles/06-materias-home.css" />
-  <link rel="stylesheet" href="../styles/media-queries.css" />
-</head>
+  <body>
+    <header>
+      <h1><a href="../index.html">Estudos &lt;MDN&#47;&gt;</a></h1>
 
-<body>
-  <header>
-    <h1><a href="../index.html">Estudos &lt;MDN&#47;&gt;</a></h1>
+      <div id="menu-icone" title="Abrir Menu Lateral">
+        <div class="linha-1"></div>
+        <div class="linha-2"></div>
+        <div class="linha-3"></div>
+      </div>
+    </header>
 
-    <div id="menu-icone" title="Abrir Menu Lateral">
-      <div class="linha-1"></div>
-      <div class="linha-2"></div>
-      <div class="linha-3"></div>
+    <div id="menu-lateral" class="menu-responsivo">
+      <ol>
+        <li>
+          <details>
+            <summary>Beginners</summary>
+            <ul class="ul-menu">
+              <li>
+                <a href="../01-beginners/beginners-home.html">Apresentação</a>
+              </li>
+              <li>
+                <a href="../01-beginners/my-test-page.html" target="_blank">My test page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details open>
+            <summary>HTML — Structuring the web</summary>
+            <ul class="ul-menu">
+              <li class="link-ativo">
+                <a href="../02-html/html-home.html">Apresentação</a>
+              </li>
+              <li>
+                <span class="subdivisao">Introdução ao HTML</span>
+                <ul class="ul-interno-menu">
+                  <li>
+                    <span class="subdivisao">What's in the head? Metadata in HTML</span>
+                    <ul>
+                      <li>
+                        <a href="01-introduction-to-html/01-what-is-in-the-head.html">Exemplos</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>CSS — Styling the web</summary>
+            <ul class="ul-menu">
+              <li>
+                <a href="../03-css/css-home.html">Apresentação</a>
+              </li>
+              <li>
+                <span class="subdivisao">CSS first steps</span>
+                <ul class="ul-interno-menu">
+                </ul>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details class="details-ultimo">
+            <summary>JavaScript — Dynamic client-side scripting</summary>
+            <ul class="ul-menu">
+              <li>
+                <a href="../04-javascript/javascript-home.html">Apresentação</a>
+              </li>
+              <li>
+                <span class="subdivisao">JavaScript Basics</span>
+                <ul class="ul-interno-menu">
+                  <li>
+                    <a href="../04-javascript/01-basics/exemplos.html">Exemplos</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="subdivisao">JavaScript First Steps</span>
+                <ul class="ul-interno-menu">
+                  <li>
+                    <a href="../04-javascript/02-first-steps/exemplos.html">Exemplos</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ol>
     </div>
-  </header>
 
-  <div id="menu-lateral" class="menu-responsivo">
-    <ol>
-      <li>
-        <details>
-          <summary>Beginners</summary>
-          <ul class="ul-menu">
-            <li>
-              <a href="../01-beginners/beginners-home.html">Apresentação</a>
-            </li>
-            <li>
-              <a href="../01-beginners/my-test-page.html" target="_blank">My test page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </li>
-          </ul>
-        </details>
-      </li>
-      <li>
-        <details open>
-          <summary>HTML — Structuring the web</summary>
-          <ul class="ul-menu">
-            <li class="link-ativo">
-              <a href="../02-html/html-home.html">Apresentação</a>
-            </li>
-            <li>
-              <span class="subdivisao">Introdução ao HTML</span>
-              <ul class="ul-interno-menu">
-              </ul>
-            </li>
-          </ul>
-        </details>
-      </li>
-      <li>
-        <details>
-          <summary>CSS — Styling the web</summary>
-          <ul class="ul-menu">
-            <li>
-              <a href="../03-css/css-home.html">Apresentação</a>
-            </li>
-            <li>
-              <span class="subdivisao">CSS first steps</span>
-              <ul class="ul-interno-menu">
-              </ul>
-            </li>
-          </ul>
-        </details>
-      </li>
-      <li>
-        <details>
-          <summary>JavaScript — Dynamic client-side scripting</summary>
-          <ul class="ul-menu">
-            <li>
-              <a href="../04-javascript/javascript-home.html">Apresentação</a>
-            </li>
-            <li>
-              <span class="subdivisao">JavaScript Basics</span>
-              <ul class="ul-interno-menu">
-                <li>
-                  <a href="../04-javascript/01-basics/exemplos.html">Exemplos</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <span class="subdivisao">JavaScript First Steps</span>
-              <ul class="ul-interno-menu">
-                <li>
-                  <a href="../04-javascript/02-first-steps/exemplos.html">Exemplos</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </details>
-      </li>
-    </ol>
-  </div>
+    <main class="container-principal">
+      <div class="container-conteudo">
+        <h2>Introdução</h2>
+          <div class="conteudo">
+            <p>HTML (HyperText Markup Language) é uma linguagem de marcação usada para estruturar uma página web e seu conteúdo. O conteúdo pode ser estruturado em um conjunto de parágrafos, lista de marcadores, imagens ou tabelas de dados.</p>
+            <p>HTML consiste em uma série de elementos (tags) que você usa para delimitar, agrupar ou marcar diferentes partes do conteúdo para que apareçam ou atuem de uma determinada forma.</p>
+            <p>Uma tag HTML pode, por exemplo, criar um link que direcionará a página atual para uma outra página; ou colocar palavras em itálico; ou então incluir uma imagem dentro da página e assim por diante.</p>
+            <h3>Tópicos do módulo:</h3>
+            <ol>
+              <li>Introduction to HTML</li>
+              <li>Multimedia and embedding</li>
+              <li>HTML tables</li>
+            </ol>
+          </div>
+      </div>
+    </main>
 
-  <main class="container-principal">
-    <div class="container-conteudo">
-      <h2>Introdução</h2>
-        <div class="conteudo">
-          <p>HTML (HyperText Markup Language) é uma linguagem de marcação usada para estruturar uma página web e seu conteúdo. O conteúdo pode ser estruturado em um conjunto de parágrafos, lista de marcadores, imagens ou tabelas de dados.</p>
-          <p>HTML consiste em uma série de elementos (tags) que você usa para delimitar, agrupar ou marcar diferentes partes do conteúdo para que apareçam ou atuem de uma determinada forma.</p>
-          <p>Uma tag HTML pode, por exemplo, criar um link que direcionará a página para outra página diferente; ou colocar palavras em itálico; ou então incluir uma imagem dentro da página e assim por diante.</p>
-          <h3>Tópicos do módulo:</h3>
-          <ol>
-            <li>Introduction to HTML</li>
-            <li>Multimedia and embedding</li>
-            <li>HTML tables</li>
-          </ol>
-        </div>
-    </div>
-  </main>
+    <footer>
+      <p>Desenvolvido por Rafa Santana</p>
 
-  <footer>
-    <p>Desenvolvido por Rafa Santana</p>
-
-    <section class="contato">
-      <a href="https://github.com/rafa-san" target="_blank" id="profile-link">
-        <i class="fa brands fa-github"> <span class="texto-icone">GitHub</span></i>
-      </a>
-      <a href="https://www.linkedin.com/in/rafael-santana-53750415a/" target="_blank">
-        <i class="fa brands fa-linkedin"> <span class="texto-icone">LinkedIn</span></i>
-      </a>
-    </section>
-  </footer>
-
-  <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
-  <script src="../scripts/menu-lateral.js"></script>
-</body>
-
+      <section class="contato">
+        <a href="https://github.com/rafa-san" target="_blank" id="profile-link">
+          <i class="fa brands fa-github"> <span class="texto-icone">GitHub</span></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rafael-santana-53750415a/" target="_blank">
+          <i class="fa brands fa-linkedin"> <span class="texto-icone">LinkedIn</span></i>
+        </a>
+      </section>
+    </footer>
+  </body>
 </html>
