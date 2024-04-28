@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media (min-width: 650px) {
+@media (min-width: 850px) {
   /* HEADER */
   .index-header {
     justify-content: center;
