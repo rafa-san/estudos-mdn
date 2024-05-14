@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rafael Santana" />
+    <meta name="description" content="Exemplos e exercícios do site MDN Web Docs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beginners - Exemplos</title>
+    <link rel="stylesheet" href="../styles/01-global-styles.css" />
+    <link rel="stylesheet" href="../styles/02-header.css" />
+    <link rel="stylesheet" href="../styles/03-footer.css" />
+    <link rel="stylesheet" href="../styles/05-menu-lateral.css" />
+    <link rel="stylesheet" href="../styles/06-materias-atividades.css" />
+    <link rel="stylesheet" href="../styles/media-queries.css" />
+    <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous" defer></script>
+    <script src="../scripts/menu-lateral.js" defer></script>
+    <script src="../scripts/01-beginners/exemplo-1.js" defer></script>
+    <script src="../scripts/01-beginners/exemplo-2.js" defer></script>
+    <style>
+      .atividade-1 h1 {
+        color: #00539F;
+        font-size: 60px;
+        margin: 0;
+        padding: 20px 0;
+        text-align: center;
+        text-shadow: 3px 3px 1px black;
+      }
+
+      .container-imagem {
+        min-height: 300px;
+      }
+
+      .container-imagem img {
+        display: block;
+        height: auto;
+        margin: 8px auto;
+        max-width: 100%;
+      }
+
+      .atividade p, 
+      .atividade li {
+        letter-spacing: 1px;
+        text-align: left;
+      }
+
+      .atividade-2 ul {
+        background-color: coral;
+        list-style-position: inside;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="../../../index.html">Estudos &lt;MDN&#47;&gt;</a></h1>
+
+      <div id="menu-icone" title="Abrir Menu Lateral">
+        <div class="linha-1"></div>
+        <div class="linha-2"></div>
+        <div class="linha-3"></div>
+      </div>
+    </header>
+
+    <div id="menu-lateral" class="menu-responsivo">
+      <ol>
+        <li>
+          <details open>
+            <summary>Beginners</summary>
+            <ul class="ul-menu">
+              <li>
+                <a href="beginners-home.html">Apresentação</a>
+              </li>
+              <li class="link-ativo">
+                <a href="exemplos.html">Exemplos</a>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details open>
+            <summary>HTML — Structuring the web</summary>
+            <ul class="ul-menu">
+              <li>
+                <a href="../02-html/html-home.html">Apresentação</a>
+              </li>
+              <li>
+                <span class="subdivisao">Introduction to HTML</span>
+                <ul class="ul-interno-menu">
+                  <li>
+                    <span class="subdivisao">HTML text fundamentals</span>
+                    <ul>
+                      <li>
+                        <a href="../02-html/01-introduction-to-html/01-text-fundamentals/exemplos.html">Exemplos</a>
+                      </li>
+                      <li>
+                        <a href="../02-html/01-introduction-to-html/01-text-fundamentals/test-your-skills.html">Test your skills</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="subdivisao">Creating hyperlinks</span>
+                    <ul>
+                      <li>
+                        <a href="../02-html/01-introduction-to-html/02-creating-hyperlinks/atividade.html">Atividade</a>
+                      </li>
+                      <li>
+                        <a href="../02-html/01-introduction-to-html/02-creating-hyperlinks/test-your-skills.html">Test your skills</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details open>
+            <summary>CSS — Styling the web</summary>
+            <ul class="ul-menu">
+              <li>
+                <a href="../03-css/css-home.html">Apresentação</a>
+              </li>
+              <li>
+                <span class="subdivisao">CSS First Steps</span>
+                <ul class="ul-interno-menu">
+                  <li>
+                    <span class="subdivisao">Getting started with CSS</span>
+                    <ul>
+                      <li>
+                        <a href="../03-css/01-css-first-steps/01-getting-started-with-css/exemplo.html">Exemplo</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details class="details-ultimo" open>
+            <summary>JavaScript — Dynamic client-side scripting</summary>
+            <ul class="ul-menu">
+              <li>
+                <a href="../04-javascript/javascript-home.html">Apresentação</a>
+              </li>
+              <li>
+                <span class="subdivisao">JavaScript Complete Beginners</span>
+                <ul class="ul-interno-menu">
+                  <li>
+                    <span class="subdivisao">JavaScript Basics</span>
+                    <ul>
+                      <li>
+                        <a href="../04-javascript/01-basics/exemplos.html">Exemplos</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="subdivisao">JavaScript First Steps</span>
+                <ul class="ul-interno-menu">
+                  <li>
+                    <span class="subdivisao">What is JavaScript?</span>
+                    <ul>
+                      <li>
+                        <a href="../04-javascript/02-first-steps/exemplos.html">Exemplos</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="subdivisao">A first splash into JavaScript</span>
+                    <ul>
+                      <li>
+                        <a href="../04-javascript/03-first-splash-into-javascript/exemplo.html">Exemplo</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+    </div>
+
+    <main class="container-principal">
+      <div class="conteudo">
+        <h2>Beginners</h2>
+        <p>Exemplos para demonstrar uma página web desenvolvida com HTML, CSS e JavaScript.</p>
+        <h3>Exemplo 1</h3>
+          <div class="atividade atividade-1">
+            <h1 id="h1-atividade">Mozilla is cool</h1>
+            <div class="container-imagem">
+              <img src="../images/firefox-icon-1.png" alt="The Firefox logo: a flaming fox surrounding the Earth." title="Clique na imagem" />
+            </div>
+
+            <p>At Mozilla, we are a global community of</p>
+
+            <ul> <!-- changed to list in the tutorial -->
+              <li>technologists</li>
+              <li>thinkers</li>
+              <li>builders</li>
+            </ul>
+
+            <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+
+            <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
+
+            <button>Change user</button>
+          </div>
+
+          <h3>Exemplo 2</h3>
+          <div class="atividade atividade-2">
+          </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Desenvolvido por Rafa Santana</p>
+
+      <section class="contato">
+        <a href="https://github.com/rafa-san" target="_blank" id="profile-link">
+          <i class="fa brands fa-github"> <span class="texto-icone">GitHub</span></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rafael-santana-53750415a/" target="_blank">
+          <i class="fa brands fa-linkedin"> <span class="texto-icone">LinkedIn</span></i>
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>
