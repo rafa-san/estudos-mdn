@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../styles/02-header.css" />
     <link rel="stylesheet" href="../styles/03-footer.css" />
     <link rel="stylesheet" href="../styles/05-menu-lateral.css" />
-    <link rel="stylesheet" href="../styles/06-materias-home.css" />
+    <link rel="stylesheet" href="../styles/06-materias-atividades.css" />
     <link rel="stylesheet" href="../styles/media-queries.css" />
     <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous" defer></script>
     <script src="../scripts/menu-lateral.js" defer></script>
@@ -30,33 +30,47 @@
     <div id="menu-lateral" class="menu-responsivo">
       <ol>
         <li>
-          <details>
+          <details open>
             <summary>Beginners</summary>
             <ul class="ul-menu">
               <li>
                 <a href="../01-beginners/beginners-home.html">Apresentação</a>
               </li>
               <li>
-                <a href="../01-beginners/my-test-page.html" target="_blank">My test page <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="../01-beginners/exemplos.html">Exemplos</a>
               </li>
             </ul>
           </details>
         </li>
         <li>
-          <details>
+          <details open>
             <summary>HTML — Structuring the web</summary>
             <ul class="ul-menu">
               <li>
                 <a href="../02-html/html-home.html">Apresentação</a>
               </li>
               <li>
-                <span class="subdivisao">Introdução ao HTML</span>
+                <span class="subdivisao">Introduction to HTML</span>
                 <ul class="ul-interno-menu">
                   <li>
-                    <span class="subdivisao">What's in the head? Metadata in HTML</span>
+                    <span class="subdivisao">HTML text fundamentals</span>
                     <ul>
                       <li>
-                        <a href="../02-html/01-introduction-to-html/what-is-in-the-head/exemplos.html">Exemplos</a>
+                        <a href="../02-html/01-introduction-to-html/01-text-fundamentals/exemplos.html">Exemplos</a>
+                      </li>
+                      <li>
+                        <a href="../02-html/01-introduction-to-html/01-text-fundamentals/test-your-skills.html">Test your skills</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="subdivisao">Creating hyperlinks</span>
+                    <ul>
+                      <li>
+                        <a href="../02-html/01-introduction-to-html/02-creating-hyperlinks/atividade.html">Atividade</a>
+                      </li>
+                      <li>
+                        <a href="../02-html/01-introduction-to-html/02-creating-hyperlinks/test-your-skills.html">Test your skills</a>
                       </li>
                     </ul>
                   </li>
@@ -66,7 +80,7 @@
           </details>
         </li>
         <li>
-          <details>
+          <details open>
             <summary>CSS — Styling the web</summary>
             <ul class="ul-menu">
               <li>
@@ -79,7 +93,7 @@
                     <span class="subdivisao">Getting started with CSS</span>
                     <ul>
                       <li>
-                        <a href="../03-css/01-css-first-steps/exemplos.html">Exemplos</a>
+                        <a href="../03-css/01-css-first-steps/01-getting-started-with-css/exemplo.html">Exemplo</a>
                       </li>
                     </ul>
                   </li>
@@ -102,7 +116,7 @@
                     <span class="subdivisao">JavaScript Basics</span>
                     <ul>
                       <li>
-                        <a href="01-basics/exemplos.html">Exemplos</a>
+                        <a href="../04-javascript/01-basics/exemplos.html">Exemplos</a>
                       </li>
                     </ul>
                   </li>
@@ -115,7 +129,7 @@
                     <span class="subdivisao">What is JavaScript?</span>
                     <ul>
                       <li>
-                        <a href="02-first-steps/exemplos.html">Exemplos</a>
+                        <a href="../04-javascript/02-first-steps/01-what-is-javascript/exemplos.html">Exemplos</a>
                       </li>
                     </ul>
                   </li>
@@ -123,13 +137,12 @@
                     <span class="subdivisao">A first splash into JavaScript</span>
                     <ul>
                       <li>
-                        <a href="03-first-splash-into-javascript/exemplos.html">Exemplos</a>
+                        <a href="../04-javascript/02-first-steps/02-first-splash-into-javascript/exemplo.html">Exemplo</a>
                       </li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li>
             </ul>
           </details>
         </li>
@@ -137,20 +150,18 @@
     </div>
 
     <main class="container-principal">
-      <div class="container-conteudo">
-        <h2>Introdução</h2>
-          <div class="conteudo">
-            <p>JavaScript é uma linguagem de programação que adiciona interatividade ao seu site.</p>
-            <p>Cada vez que uma página web faz mais do que apenas ficar ali e exibir informações estáticas para você ver - exibindo atualizações de conteúdo oportunas, mapas interativos, gráficos animados 2D/3D ou mais - você pode apostar que provavelmente o JavaScript está envolvido.</p>
-            <h3>Tópicos do módulo:</h3>
-            <ol>
-              <li>JavaScript first steps</li>
-              <li>JavaScript building blocks</li>
-              <li>Introducing JavaScript objects</li>
-              <li>Asynchronous JavaScript</li>
-              <li>Client-side web APIs</li>
-            </ol>
-          </div>
+      <div class="conteudo">
+        <h2>JavaScript - Apresentação</h2>
+        <p>JavaScript é uma linguagem de programação que adiciona interatividade ao seu site.</p>
+        <p>Cada vez que uma página web faz mais do que apenas ficar ali e exibir informações estáticas para você ver - exibindo atualizações de conteúdo oportunas, mapas interativos, gráficos animados 2D/3D ou mais - você pode apostar que provavelmente o JavaScript está envolvido.</p>
+        <h3>Tópicos do módulo:</h3>
+        <ol>
+          <li>JavaScript first steps</li>
+          <li>JavaScript building blocks</li>
+          <li>Introducing JavaScript objects</li>
+          <li>Asynchronous JavaScript</li>
+          <li>Client-side web APIs</li>
+        </ol>
       </div>
     </main>
 
