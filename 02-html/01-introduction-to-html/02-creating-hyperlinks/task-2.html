@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rafael Santana" />
+    <meta name="description" content="Exemplos e exercícios do site MDN Web Docs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML - Creating hyperlinks - Task 2</title>
+    <link rel="stylesheet" href="../../../styles/06-materias-atividades.css" />
+    <style>
+      .grande {
+        height: 600px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div>
+        <h1>Task 2</h1>
+        <p>In this task, we want you to fill in the four links so that they link to the appropriate places:</p>
+        <ul>
+          <li>The first link should link to an image called <code>blue-whale.jpg</code>, which is located in a directory called <code>blue</code> inside the current directory.</li>
+          <li>The second link should link to an image called <code>narwhal.jpg</code>, which is located in a directory called <code>narwhal</code>, which is located one directory level above the current directory.</li>
+          <li>The third link should link to the UK Google Image search. The base URL is <code>https://www.google.co.uk</code>, and the image search is located in a subdirectory called <code>imghp</code>.</li>
+          <li>The fourth link should link to the paragraph at the very bottom of the current page. It has an ID of <code>bottom</code>.</li>
+        </ul>
+
+        <h2>Starting point</h2>
+        <div class="starting-point">
+          <h1>List path tests</h1>
+
+          <ul>
+            <li><a target="_blank">Link me to the blue whale image</a></li>
+            <li><a target="_blank">Link me to the narwhal image</a></li>
+            <li><a target="_blank">Link me to Google image search</a></li>
+            <li><a>Link me to the paragraph at the bottom of the page</a></li>
+          </ul>
+
+          <div></div>
+
+          <p>The bottom of the page!</p>
+        </div>
+
+        <h2>Finished Task</h2>
+        <div class="finished-task">
+          <h1>List path tests</h1>
+          <ul>
+            <li><a href="blue/blue-whale.jpg" target="_blank">Link me to the blue whale image</a></li>
+            <li><a href="../narwhal/narwhal.jpg" target="_blank">Link me to the narwhal image</a></li>
+            <li><a href="https://www.google.co.uk/imghp" target="_blank">Link me to Google image search</a></li>
+            <li><a href="#bottom">Link me to the paragraph at the bottom of the page</a></li>
+          </ul>
+          
+          <div class="grande"></div>
+
+          <p id="bottom">The bottom of the page!</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

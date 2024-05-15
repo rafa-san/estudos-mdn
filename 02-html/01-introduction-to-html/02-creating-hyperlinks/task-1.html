@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rafael Santana" />
+    <meta name="description" content="Exemplos e exercícios do site MDN Web Docs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML - Creating hyperlinks - Task 1</title>
+    <link rel="stylesheet" href="../../../styles/06-materias-atividades.css" />
+  </head>
+
+  <body>
+    <main>
+      <div>
+        <h1>Task 1</h1>
+        <p>In this task, we want you to help fill in the links on our Whales information page:</p>
+        <ul>
+          <li>The first link should be linked to a page called <code>whales.html</code>, which is in the same directory as the current page.</li>
+          <li>We'd also like you to give it a tooltip when moused over that tells the user that the page includes information on Blue Whales and Sperm Whales.</li>
+          <li>The second link should be turned into a link you can click to open up an email in the user's default mail application, with the recipient set as <strong>"whales@example.com"</strong>.</li>
+          <li>You'll get a bonus point if you also set it so that the subject line of the email is automatically filled in as "Question about Whales".</li>
+        </ul>
+        
+        <h2>Starting point</h2>
+        <div class="starting-point">
+          <h2>Information on Whales</h2>
+          <p>For more information on our conservation activities and which Whales we study,
+          see our <a target="_blank">Whales page</a>.</p>
+          <p>If you want to ask our team more questions, feel free to <a target="_blank">email us</a>.</p>
+        </div>
+
+        <h2>Finished Task</h2>
+        <div class="finished-task">
+          <h2>Information on Whales</h2>
+          <p>For more information on our conservation activities and which Whales we study,
+          see our <a href="whales.html" target="_blank" title="This page includes information about Blue Whales and Sperm Whales" target="_blank">Whales page</a>.</p>
+          <p>If you want to ask our team more questions, feel free to <a href="mailto:whales@example.com?cc=whales@examples&subject=Question%20about%20Whales" target="_blank">email us</a>.</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

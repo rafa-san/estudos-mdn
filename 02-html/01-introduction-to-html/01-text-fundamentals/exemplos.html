@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rafael Santana" />
+    <meta name="description" content="Exemplos e exercícios do site MDN Web Docs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML - Text fundamentals - Exemplos</title>
+    <link rel="stylesheet" href="../../../styles/01-global-styles.css" />
+    <link rel="stylesheet" href="../../../styles/02-header.css" />
+    <link rel="stylesheet" href="../../../styles/03-footer.css" />
+    <link rel="stylesheet" href="../../../styles/05-menu-lateral.css" />
+    <link rel="stylesheet" href="../../../styles/06-materias-atividades.css" />
+    <link rel="stylesheet" href="../../../styles/media-queries.css" />
+    <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous" defer></script>
+    <script src="../../../scripts/menu-lateral.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="../../../index.html">Estudos &lt;MDN&#47;&gt;</a></h1>
+
+      <div id="menu-icone" title="Abrir Menu Lateral">
+        <div class="linha-1"></div>
+        <div class="linha-2"></div>
+        <div class="linha-3"></div>
+      </div>
+    </header>
+
+    <div id="menu-lateral" class="menu-responsivo">
+      <ol>
+        <li>
+          <details open>
+            <summary>Beginners</summary>
+            <ul class="ul-menu">
+              <li>
+                <a href="../../../01-beginners/beginners-home.html">Apresentação</a>
+              </li>
+              <li>
+                <a href="../../../01-beginners/exemplos.html">Exemplos</a>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details open>
+            <summary>HTML — Structuring the web</summary>
+            <ul class="ul-menu">
+              <li>
+                <a href="../../html-home.html">Apresentação</a>
+              </li>
+              <li>
+                <span class="subdivisao">Introduction to HTML</span>
+                <ul class="ul-interno-menu">
+                  <li>
+                    <span class="subdivisao">HTML text fundamentals</span>
+                    <ul>
+                      <li class="link-ativo">
+                        <a href="../01-text-fundamentals/exemplos.html">Exemplos</a>
+                      </li>
+                      <li>
+                        <a href="../01-text-fundamentals/test-your-skills.html">Test your skills</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="subdivisao">Creating hyperlinks</span>
+                    <ul>
+                      <li>
+                        <a href="../02-creating-hyperlinks/atividade.html">Atividade</a>
+                      </li>
+                      <li>
+                        <a href="../02-creating-hyperlinks/test-your-skills.html">Test your skills</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details open>
+            <summary>CSS — Styling the web</summary>
+            <ul class="ul-menu">
+              <li>
+                <a href="../../../03-css/css-home.html">Apresentação</a>
+              </li>
+              <li>
+                <span class="subdivisao">CSS First Steps</span>
+                <ul class="ul-interno-menu">
+                  <li>
+                    <span class="subdivisao">Getting started with CSS</span>
+                    <ul>
+                      <li>
+                        <a href="../../../03-css/01-css-first-steps/01-getting-started-with-css/exemplo.html">Exemplo</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details class="details-ultimo" open>
+            <summary>JavaScript — Dynamic client-side scripting</summary>
+            <ul class="ul-menu">
+              <li>
+                <a href="../../../04-javascript/javascript-home.html">Apresentação</a>
+              </li>
+              <li>
+                <span class="subdivisao">JavaScript Complete Beginners</span>
+                <ul class="ul-interno-menu">
+                  <li>
+                    <span class="subdivisao">JavaScript Basics</span>
+                    <ul>
+                      <li>
+                        <a href="../../../04-javascript/01-basics/exemplos.html">Exemplos</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="subdivisao">JavaScript First Steps</span>
+                <ul class="ul-interno-menu">
+                  <li>
+                    <span class="subdivisao">What is JavaScript?</span>
+                    <ul>
+                      <li>
+                        <a href="../../../04-javascript/02-first-steps/01-what-is-javascript/exemplos.html">Exemplos</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="subdivisao">A first splash into JavaScript</span>
+                    <ul>
+                      <li>
+                        <a href="../../../04-javascript/02-first-steps/02-first-splash-into-javascript/exemplo.html">Exemplo</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+    </div>
+
+    <main class="container-principal">
+      <div class="conteudo">
+        <h2>Text Fundamentals - Exemplos</h2>
+        <h3>Exemplo 1: Texto sem formatação</h3>
+        <div class="atividade">
+          Quick hummus recipe
+
+          This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years.
+
+          Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with salad, grilled meats and pitta breads.
+
+          Ingredients
+
+          1 can (400g) of chick peas (garbanzo beans)
+          175g of tahini
+          6 sundried tomatoes
+          Half a red pepper
+          A pinch of cayenne pepper
+          1 clove of garlic
+          A dash of olive oil
+
+          Instructions
+
+          Remove the skin from the garlic, and chop coarsely
+          Remove all the seeds and stalk from the pepper, and chop coarsely
+          Add all the ingredients into a food processor
+          Process all the ingredients into a paste.
+          If you want a coarse "chunky" hummus, process it for a short time
+          If you want a smooth hummus, process it for a longer time
+
+          For a different flavour, you could try blending in a small measure of lemon and coriander, chili pepper, lime and chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you.
+
+          Storage
+
+          Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week after you've made it. If it starts to become fizzy, you should definitely discard it.
+
+          Hummus is suitable for freezing; you should thaw it and use it within a couple of months.
+        </div>
+
+        <h3>Exemplo 2: Texto Formatado</h3>
+        <div class="atividade">
+          <h1>Quick hummus recipe</h1>
+
+          <p>This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different recipes that I have read over the years.</p>
+
+          <p>Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with salad, grilled meats and pitta breads.</p>
+
+          <h2>Ingredients</h2>
+
+          <ul>
+            <li>1 can (400g) of chick peas (garbanzo beans)</li>
+            <li>175g of tahini</li>
+            <li>6 sundried tomatoes</li>
+            <li>Half a red pepper</li>
+            <li>A pinch of cayenne pepper</li>
+            <li>1 clove of garlic</li>
+            <li>A dash of olive oil</li>
+          </ul>
+
+          <h2>Instructions</h2>
+
+          <ol>
+            <li>Remove the skin from the garlic, and chop coarsely.</li>
+            <li>Remove all the seeds and stalk from the pepper, and chop coarsely.</li>
+            <li>Add all the ingredients into a food processor.</li>
+            <li>
+              Process all the ingredients into a paste.
+              <ul>
+                <li>If you want a coarse "chunky" hummus, process it for a short time.</li>
+                <li>If you want a smooth hummus, process it for a longer time.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <p>For a different flavour, you could try blending in a small measure of lemon and coriander, chili pepper, lime and chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you.</p>
+
+          <h2>Storage</h2>
+
+          <p>Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week after you've made it. If it starts to become fizzy, you should definitely discard it.</p>
+
+          <p>Hummus is suitable for freezing; you should thaw it and use it within a couple of months.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Desenvolvido por Rafa Santana</p>
+
+      <section class="contato">
+        <a href="https://github.com/rafa-san" target="_blank" id="profile-link">
+          <i class="fa brands fa-github"> <span class="texto-icone">GitHub</span></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rafael-santana-53750415a/" target="_blank">
+          <i class="fa brands fa-linkedin"> <span class="texto-icone">LinkedIn</span></i>
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>
