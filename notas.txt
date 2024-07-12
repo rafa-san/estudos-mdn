@@ -1,0 +1,129 @@
+declaring the variable
+Initializing a variable with a value
+You can declare and initialize a variable at the same time
+
+Variable types
+There are a few different types of data we can store in variables.
+
+.numbers
+. strings
+.booleans
+. arrays
+.objects
+
+
+***
+
+#Functions
+
+Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code.
+
+If you see something which looks like a variable name, but it's followed by parentheses— () —it is likely a function. Functions often take arguments: bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.
+
+For example, the alert() function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what message to display.
+
+ou can also define your own functions. In the next example, we create a simple function which takes two numbers as arguments and multiplies them:
+
+JS
+Copy to Clipboard
+function multiply(num1, num2) {
+  let result = num1 * num2;
+  return result;
+}
+
+
+Try running this in the console; then test with several arguments. For example:
+
+JS
+Copy to Clipboard
+multiply(4, 7);
+multiply(20, 20);
+multiply(0.5, 3);
+
+
+Note: The return statement tells the browser to return the result variable out of the function so it is available to use. This is necessary because variables defined inside functions are only available inside those functions. This is called variable scoping. (Read more about variable scoping.)
+
+
+***
+
+arrow function
+
+document.querySelector("html").addEventListener("click", function () {
+  alert("Ouch! Stop poking me!");
+});
+
+document.querySelector("html").addEventListener("click", () => {
+  alert("Ouch! Stop poking me!");
+});
+
+***
+
+arithmetic operators
+comparison operators
+
+
+
+***
+
+
+const resetParas = document.querySelectorAll(".resultParas p");
+for (const resetPara of resetParas) {
+  resetPara.textContent = "";
+}
+This code creates a variable containing a list of all the paragraphs inside <div class="resultParas"> using the querySelectorAll() method, then it loops through each one, removing the text content of each.
+
+
+***
+
+
+An object is a collection of related functionality stored in a single grouping. You can create your own objects, but that is quite advanced and we won't be covering it until much later in the course. For now, we'll just briefly discuss the built-in objects that your browser contains, which allow you to do lots of useful things.
+
+In this particular case, we first created a guessField constant that stores a reference to the text input form field in our HTML — the following line can be found amongst our declarations near the top of the code:
+
+JS
+Copy to Clipboard
+const guessField = document.querySelector(".guessField");
+To get this reference, we used the querySelector() method of the document object. querySelector() takes one piece of information — a CSS selector that selects the element you want a reference to.
+
+
+
+
+
+
+#What is a variable?
+A variable is a container for a value, like a number we might use in a sum, or a string that we might use as part of a sentence.
+
+#Declaring a variable
+To use a variable, you've first got to create it — more accurately, we call this declaring the variable. To do this, we type the keyword let followed by the name you want to call your variable:
+
+#Initializing a variable
+Once you've declared a variable, you can initialize it with a value. You do this by typing the variable name, followed by an equals sign (=), followed by the value you want to give it.
+
+You can declare and initialize a variable at the same time
+
+#Variable types
+There are a few different types of data we can store in variables. In this section we'll describe these in brief, then in future articles, you'll learn about them in more detail.
+
+Numbers
+You can store numbers in variables, either whole numbers like 30 (also called integers) or decimal numbers like 2.456 (also called floats or floating point numbers). You don't need to declare variable types in JavaScript, unlike some other programming languages. When you give a variable a number value, you don't include quotes:
+
+Strings
+Strings are pieces of text. When you give a variable a string value, you need to wrap it in single or double quote marks; otherwise, JavaScript tries to interpret it as another variable name.
+
+Booleans
+Booleans are true/false values — they can have two values, true or false. These are generally used to test a condition, after which code is run as appropriate. So for example, a simple case would be:
+
+Arrays
+An array is a single object that contains multiple values enclosed in square brackets and separated by commas. Try entering the following lines into your console:
+
+Objects
+In programming, an object is a structure of code that models a real-life object. You can have a simple object that represents a box and contains information about its width, length, and height, or you could have an object that represents a person, and contains data about their name, height, weight, what language they speak, how to say hello to them, and more.
+
+let dog = { name: "Spot", breed: "Dalmatian" };
+To retrieve the information stored in the object, you can use the following syntax:
+
+JS
+Copy to Clipboard
+dog.name;
+
+
