@@ -81,6 +81,16 @@
   padding: 16px;
 }
 
+.atividade h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
 .atividade h1,
 .atividade h2,
 .atividade h3,
@@ -106,6 +116,15 @@
   margin: 8px auto;
   padding: 16px 24px;
   text-transform: uppercase;
+}
+
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
 }
 
 iframe {
@@ -137,18 +156,4 @@ iframe {
 .finished-task h3,
 .finished-task h4 {
   color: purple;
-}
-
-
-
-
-
-
-dl {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
 }
