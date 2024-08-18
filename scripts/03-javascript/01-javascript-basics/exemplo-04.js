@@ -3,10 +3,10 @@ const myImage = document.querySelector('img');
 
 myImage.onclick = function() {
   let mySrc = myImage.getAttribute('src');
-  if(mySrc === '../images/firefox-icon-1.png') {
-    myImage.setAttribute ('src','../images/firefox-icon-2.jpeg');
+  if(mySrc === '../../images/firefox-icon-1.png') {
+    myImage.setAttribute ('src','../../images/firefox-icon-2.jpeg');
   } else {
-    myImage.setAttribute ('src','../images/firefox-icon-1.png');
+    myImage.setAttribute ('src','../../images/firefox-icon-1.png');
   }
 }
 
@@ -23,8 +23,8 @@ myImage.onclick = function() {
 Caso contrário, se o caminho da imagem atual não for '../images/firefox-icon-1.png', estamos revertendo para essa imagem.
 */
 
-// Mensagem de boas-vindas
 
+// Mensagem de boas-vindas
 const myButton = document.querySelector('button');
 const myHeading = document.querySelector('#h1-atividade');
 
