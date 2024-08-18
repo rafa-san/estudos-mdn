@@ -1,47 +1,257 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rafael Santana" />
     <meta name="description" content="Exemplos e exercícios do site MDN Web Docs" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estudos MDN - Página Inicial</title>
+    <title>Página Inicial</title>
     <link rel="stylesheet" href="styles/01-global-styles.css" />
-    <link rel="stylesheet" href="styles/02-header.css" />
-    <link rel="stylesheet" href="styles/03-footer.css" />
-    <link rel="stylesheet" href="styles/04-index.css" />
+    <link rel="stylesheet" href="styles/02-header-e-footer.css" />
+    <link rel="stylesheet" href="styles/03-index.css" />
     <link rel="stylesheet" href="styles/media-queries.css" />
-    <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous" defer></script>
   </head>
 
   <body>
-    <header class="index-header">
+    <header>
       <h1><a href="index.html">Estudos &lt;MDN&#47;&gt;</a></h1>
     </header>
 
-    <main class="index-container">
-      <!-- Beginners section -->
-      <section class="materia">
-        <h2><a href="01-beginners/home.html"><span class="tag">&lt; </span> Beginners <span class="tag">&#47;&gt;</span></a></h2>
-      </section>
-
+    <div class="menu">
       <!-- HTML section -->
-      <section class="materia">
-        <h2><a href="02-html/home.html"><span class="tag">&lt; </span> HTML <span class="tag">&#47;&gt;</span></a></h2>
-      </section>
+      <ol class="subdivisao">
+        <li><span class="titulo-subdivisao">HTML — Structuring the web</span></li>
+        <li>
+          <details>
+            <summary>Introduction to HTML</summary>
+            <ol>
+              <li><a href="#">Introduction to HTML</a></li>
+              <li><a href="#">Getting started with HTML</a></li>
+              <li><a href="#">What's in the head? Metadata in HTML</a></li>
+              <li><a href="#">HTML text fundamentals</a></li>
+              <li><a href="#">Creating hyperlinks</a></li>
+              <li><a href="#">Advanced text formatting</a></li>
+              <li><a href="#">Document and website structure</a></li>
+              <li><a href="#">Debugging HTML</a></li>
+              <li><a href="#">Marking up a letter</a></li>
+              <li><a href="#">Structuring a page of content</a></li>
+            </ol>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>Multimedia and embedding</summary>
+            <ol>
+              <li><a href="#">Multimedia and embedding</a></li>
+              <li><a href="#">Images in HTML</a></li>
+              <li><a href="#">Video and audio content</a></li>
+              <li><a href="#">From object to iframe — other embedding technologies</a></li>
+              <li><a href="#">Adding vector graphics to the web</a></li>
+              <li><a href="#">Responsive images</a></li>
+              <li><a href="#">Mozilla splash page</a></li>
+            </ol>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>HTML tables</summary>
+            <ol>
+              <li><a href="#">HTML tables</a></li>
+              <li><a href="#">HTML table basics</a></li>
+              <li><a href="#">HTML table advanced features and accessibility</a></li>
+              <li><a href="#">Structuring planet data</a></li>
+            </ol>
+          </details>
+        </li>
+      </ol>
 
       <!-- CSS section -->
-      <section class="materia">
-        <h2><a href="03-css/home.html"><span class="tag">&lt; </span> CSS <span class="tag">&#47;&gt;</span></a></h2>
-      </section>
+      <ol class="subdivisao">
+        <li><span class="titulo-subdivisao">CSS — Styling the web</span></li>
 
-      <!-- JS section -->
-      <section class="materia">
-        <h2><a href="04-javascript/home.html"><span class="tag">&lt; </span> JavaScript <span class="tag">&#47;&gt;</span></a></h2>
-      </section>
-    </main>
+        <li>
+          <details>
+            <summary>CSS first steps</summary>
+            <ol>
+              <li><a href="#">CSS first steps</a></li>
+              <li><a href="#">What is CSS?</a></li>
+              <li><a href="#">Getting started with CSS</a></li>
+              <li><a href="#">How CSS is structured</a></li>
+              <li><a href="#">How CSS works</a></li>
+              <li><a href="#">Styling a biography page</a></li>
+            </ol>
+          </details>
+        </li>
 
-    <footer class="footer-index">
+        <li>
+          <details>
+            <summary>CSS building blocks</summary>
+            <ol>
+              <li><a href="#">CSS building blocks</a></li>
+              <li><a href="#">CSS selectors</a></li>
+              <li><a href="#">Type, class, and ID selectors</a></li>
+              <li><a href="#">Attribute selectors</a></li>
+              <li><a href="#">Pseudo-classes and pseudo-elements</a></li>
+              <li><a href="#">Combinators</a></li>
+              <li><a href="#">Cascade, specificity, and inheritance</a></li>
+              <li><a href="#">Cascade layers</a></li>
+              <li><a href="#">The box model</a></li>
+              <li><a href="#">Backgrounds and borders</a></li>
+              <li><a href="#">Handling different text directions</a></li>
+              <li><a href="#">Overflowing content</a></li>
+              <li><a href="#">CSS values and units</a></li>
+              <li><a href="#">Sizing items in CSS</a></li>
+              <li><a href="#">Images, media, and form elements</a></li>
+              <li><a href="#">Styling tables</a></li>
+              <li><a href="#">Advanced styling effects</a></li>
+              <li><a href="#">Debugging CSS</a></li>
+              <li><a href="#">Organizing your CSS</a></li>
+              <li><a href="#">Fundamental CSS comprehension</a></li>
+              <li><a href="#">Creating fancy letterheaded paper</a></li>
+              <li><a href="#">A cool-looking box</a></li>
+            </ol>
+          </details>
+        </li>
+          
+        <li>
+          <details>
+            <summary>Styling text</summary>
+            <ol>
+              <li><a href="#">CSS styling text</a></li>
+              <li><a href="#">Fundamental text and font styling</a></li>
+              <li><a href="#">Styling lists</a></li>
+              <li><a href="#">Styling links</a></li>
+              <li><a href="#">Web fonts</a></li>
+              <li><a href="#">Typesetting a community school homepage</a></li>
+            </ol>
+          </details>
+        </li>
+          
+        <li>
+          <details>
+            <summary>CSS layout</summary>
+            <ol>
+              <li><a href="#">CSS layout</a></li>
+              <li><a href="#">Introduction to CSS layout</a></li>
+              <li><a href="#">Normal Flow</a></li>
+              <li><a href="#">Flexbox</a></li>
+              <li><a href="#">Grids</a></li>
+              <li><a href="#">Floats</a></li>
+              <li><a href="#">Positioning</a></li>
+              <li><a href="#">Multiple-column layout</a></li>
+              <li><a href="#">Responsive design</a></li>
+              <li><a href="#">Beginner's guide to media queries</a></li>
+              <li><a href="#">Legacy layout methods</a></li>
+              <li><a href="#">Supporting older browsers</a></li>
+              <li><a href="#">Fundamental layout comprehension</a></li>
+            </ol>
+          </details>
+        </li>
+      </ol>
+        
+      <!-- JavaScript section -->
+      <ol class="subdivisao">
+        <li><span class="titulo-subdivisao">JavaScript — Dynamic client-side scripting</span></li>
+
+        <li>
+          <details open>
+            <summary>JavaScript first steps</summary>
+            <ol>
+              <li>
+                <a href="03-javascript/01-javascript-basics/index.html" class="link" target="_blank">JavaScript basics</a>
+              </li>
+              <li>
+                JavaScript first steps
+              </li>
+              <li>
+                <a href="03-javascript/02-first-steps/01-what-is-javascript/index.html" class="link" target="_blank">What is JavaScript?</a>
+              </li>
+              <li>
+                <a href="03-javascript/02-first-steps/02-first-splash-into-javascript/index.html" class="link" target="_blank">A first splash into JavaScript</a>
+              </li>
+              <li>
+                <a href="03-javascript/02-first-steps/03-what-went-wrong/index.html" class="link" target="_blank">What went wrong? Troubleshooting JavaScript</a>
+              </li>
+              <li>
+                <a href="03-javascript/02-first-steps/04-storing-the-information-you-need/index.html" class="link" target="_blank">Storing the information you need — Variables</a>
+              </li>
+              <li><a href="#">Basic math in JavaScript — numbers and operators</a></li>
+              <li><a href="#">Handling text — strings in JavaScript</a></li>
+              <li><a href="#">Useful string methods</a></li>
+              <li><a href="#">Arrays</a></li>
+              <li><a href="#">Silly story generator</a></li>
+            </ol>
+          </details>
+        </li>
+            
+        <li>
+          <details>
+            <summary>JavaScript building blocks</summary>
+            <ol>
+              <li><a href="#">JavaScript building blocks</a></li>
+              <li><a href="#">Making decisions in your code — conditionals</a></li>
+              <li><a href="#">Looping code</a></li>
+              <li><a href="#">Functions — reusable blocks of code</a></li>
+              <li><a href="#">Build your own function</a></li>
+              <li><a href="#">Function return values</a></li>
+              <li><a href="#">Introduction to events</a></li>
+              <li><a href="#">Event bubbling</a></li>
+              <li><a href="#">Image gallery</a></li>
+            </ol>
+          </details>
+        </li>
+            
+        <li>
+          <details>
+            <summary>Introducing JavaScript objects</summary>
+            <ol>
+              <li><a href="#">Introducing JavaScript objects</a></li>
+              <li><a href="#">JavaScript object basics</a></li>
+              <li><a href="#">Object prototypes</a></li>
+              <li><a href="#">Object-oriented programming</a></li>
+              <li><a href="#">Classes in JavaScript</a></li>
+              <li><a href="#">Working with JSON</a></li>
+              <li><a href="#">Object building practice</a></li>
+              <li><a href="#">Adding features to our bouncing balls demo</a></li>
+            </ol>
+          </details>
+        </li>
+            
+        <li>
+          <details>
+            <summary>Asynchronous JavaScript</summary>
+            <ol>
+              <li><a href="#">Asynchronous JavaScript</a></li>
+              <li><a href="#">Introducing asynchronous JavaScript</a></li>
+              <li><a href="#">How to use promises</a></li>
+              <li><a href="#">How to implement a promise-based API</a></li>
+              <li><a href="#">Introducing workers</a></li>
+              <li><a href="#">Sequencing animations</a></li>
+            </ol>
+          </details>
+        </li>
+            
+        <li>
+          <details>
+            <summary>Client-side web APIs</summary>
+            <ol>
+              <li><a href="#">Client-side web APIs</a></li>
+              <li><a href="#">Introduction to web APIs</a></li>
+              <li><a href="#">Manipulating documents</a></li>
+              <li><a href="#">Fetching data from the server</a></li>
+              <li><a href="#">Third-party APIs</a></li>
+              <li><a href="#">Drawing graphics</a></li>
+              <li><a href="#">Video and Audio APIs</a></li>
+              <li><a href="#">Client-side storage</a></li>
+            </ol>
+          </details>
+        </li>
+      </ol>
+    </div>
+
+    <footer>
       <p>Desenvolvido por Rafa Santana</p>
 
       <section class="contato">
