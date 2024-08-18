@@ -1,8 +1,5 @@
-HTML
-  . 
-    . 
-
+Onde parei:
 
 JS
-  . Basic math in javascript
-    . test your skills
+  .storing the information you need
+    .test your skills 2
