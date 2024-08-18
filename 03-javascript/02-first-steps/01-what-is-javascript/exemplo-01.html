@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+  </head>
+  
+  <body>
+    <h3>Exemplo 01</h3>
+    <p>Clique no botão abaixo para mudar o nome do jogador.</p>
+    <div id="exemplo01" class="atividade">
+      <button type="button">Player 1: Rafa</button>
+    </div>
+
+    <script>
+      const button = document.querySelector('#exemplo01 button');
+
+      button.addEventListener('click', updateName);
+
+      function updateName() {
+        const name = prompt('Enter a new name');
+        button.textContent = `Player 1: ${name}`;
+      }
+    </script>
+  </body>
+</html>

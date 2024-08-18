@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test your skills 1</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+<body>
+  <h2>Test your skills 1</h2>
+
+  <p>In this task we want you to:</p>
+
+  <ul>
+    <li>Declare a variable called <code>myName</code>.</li>
+    <li>Initialize <code>myName</code> with a suitable value, on a separate line (you can use your actual name, or something else).</li>
+    <li>Declare a variable called <code>myAge</code> and initialize it with a value, on the same line.</li>
+  </ul>
+  
+  <div class="output">
+    <h2>Output:</h2>
+    <section class="preview"></section>
+  </div>
+
+  <script>
+    // Add your code here
+    let myName;
+    myName = 'Rafael';
+    const myAge = 40;
+
+    // Don't edit the code below here!
+    const section = document.querySelector('section');
+    const para1 = document.createElement('p');
+    para1.textContent = myName;
+    const para2 = document.createElement('p');
+    para2.textContent = myAge;
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
+</body>
+
+</html>

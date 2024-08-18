@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test your skills 2</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h2>Test your skills 2</h2>
+
+    <p>In this task you need to add a new line to correct the value stored in the existing <code>myName</code> variable to your own name.</p>
+
+    <div class="starting-point">
+      <h2>Starting Point</h2>
+      <pre><code>// Add your code here<br />let myName = 'Paul';</code></pre>
+    </div>
+
+    <div class="finished-task">
+      <h2>Finished Task</h2>
+      <pre><code>// Add your code here<br />let myName = 'Paul';<br />myName = 'Rafael';</code></pre>
+    </div>
+
+    <div class="output">
+      <h2>Output:</h2>
+      <section class="preview"></section>
+    </div>
+
+
+    <script>
+      // Add your code here
+      let myName = 'Paul';
+      myName = 'Rafael';
+
+      // Don't edit the code below here!
+      const section = document.querySelector('section');
+
+      const para = document.createElement('p');
+      para.textContent = myName;
+      section.appendChild(para);
+    </script>
+  </body>
+</html>

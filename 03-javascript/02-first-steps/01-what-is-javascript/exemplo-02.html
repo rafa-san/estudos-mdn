@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 02</title>
+  </head>
+
+  <body>
+    <h3>Exemplo 02</h3>
+    <p>Ao clicar em um dos botões abaixo, o código irá criar um novo parágrafo e identificar qual botão foi clicado.</p>
+    <div id="exemplo02" class="atividade">
+      <button id="botao1">Botão 1</button>
+      <button id="botao2">Botão 2</button>
+    </div>
+
+    <script>
+      const section02 = document.querySelector('#exemplo02');
+      const botao01 = document.querySelector('#botao1');
+      const botao02 = document.querySelector('#botao2');
+      
+      function exemplo02(botaoExemplo02) {
+        const exe02 = document.createElement('p');
+        exe02.textContent = `Você clicou no botão ${botaoExemplo02.textContent}!`;
+        section02.appendChild(exe02);
+      }
+
+      botao01.addEventListener('click', function() {
+        exemplo02(botao01);
+      })
+
+      botao02.addEventListener('click', function() {
+        exemplo02(botao02);
+      })
+    </script>
+  </body>
+</html>

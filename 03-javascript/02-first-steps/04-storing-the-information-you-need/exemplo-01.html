@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storing the information you need - Exemplo 01</title>
+  </head>
+
+  <body>
+    <h2>Exemplo 01: Variable Example</h2>
+
+    <div class="atividade">
+      <button id="button_A">Press me</button>
+      <h3 id="heading_A"></h3>
+    </div>
+
+  <script>
+    const buttonA = document.querySelector('#button_A');
+    const headingA = document.querySelector('#heading_A');
+
+    buttonA.onclick = () => {
+      const name = prompt('Qual é o seu nome?');
+      alert(`Olá, ${name}, é um prazer te conhecer!`);
+      headingA.textContent = `Bem-vindo, ${name}!`;
+    }
+  </script>
+  </body>
+</html>

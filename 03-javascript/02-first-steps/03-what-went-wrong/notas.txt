@@ -1,0 +1,21 @@
+To fix this, let's consider how this line is working. First, we invoke Math.random(), which generates a random decimal number between 0 and 1, e.g. 0.5675493843.
+
+js
+Copy to Clipboard
+Math.random();
+Next, we pass the result of invoking Math.random() through Math.floor(), which rounds the number passed to it down to the nearest whole number. We then add 1 to that result:
+
+js
+Copy to Clipboard
+Math.floor(Math.random()) + 1;
+Rounding a random decimal number between 0 and 1 down will always return 0, so adding 1 to it will always return 1. We need to multiply the random number by 100 before we round it down. The following would give us a random number between 0 and 99:
+
+js
+Copy to Clipboard
+Math.floor(Math.random() * 100);
+Hence us wanting to add 1, to give us a random number between 1 and 100:
+
+js
+Copy to Clipboard
+Math.floor(Math.random() * 100) + 1;
+Try updating both lines like this, then save and refresh — the game should now play like we are intending it to!

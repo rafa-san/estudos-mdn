@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 03</title>
+  </head>
+
+  <body>
+    <h3>Exemplo 03</h3>
+    <p>Nesse exemplo, o script foi escrito apenas para criar os parágrafos, sem identificar qual botão foi clicado.</p>
+    <div id="exemplo03" class="atividade">
+      <button id="botao1">Botão 1</button>
+      <button id="botao2">Botão 2</button>
+    </div>
+
+    <script>
+      const section03 = document.querySelector('#exemplo03');
+      const botoesExemplo03 = document.querySelectorAll('#exemplo03 button');
+
+      function exemplo03() {
+        const exe03 = document.createElement('p');
+        exe03.textContent = `Você criou um parágrafo!`;
+        section03.appendChild(exe03);
+      }
+
+      for (const botaoExemplo03 of botoesExemplo03) {
+        botaoExemplo03.addEventListener('click', exemplo03);
+      }
+    </script>
+  </body>
+</html>
