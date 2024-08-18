@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .container-principal {
-  margin-top: 70px;
+  margin: 104px auto 32px;
   min-height: 70vh;
   padding: 16px 8px;
 }
@@ -60,12 +60,15 @@
   padding-left: 40px;
 }
 
+
+/* CONTAINER DOS BOTÕES */
 .container-botoes {
   display: flex;
-  justify-content: space-around;
+  gap: 8px;
+  justify-content: flex-start;
 }
 
-.visualizar-projeto {
+.visualizar-atividade {
   display: block;
   cursor: pointer;
   padding: 8px 16px;
@@ -74,6 +77,12 @@
 
 
 /* ATIVIDADES - EXEMPLOS E EXERCÍCIOS */
+iframe {
+  border: none;
+  height: 400px;
+  width: 100%;
+}
+
 .atividade {
   background-color: #faf8f5;
   border: 3px solid #efece9;
@@ -81,29 +90,26 @@
   padding: 16px;
 }
 
-.atividade h1 {
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
+.output {
+  background-color: rgba(255, 127, 80, 0.418);
+  border: 3px solid #efece9;
+  margin: 24px 0;
+  padding: 16px;
 }
 
-.atividade h1,
-.atividade h2,
-.atividade h3,
-.atividade h4 {
+.output h1,
+.output h2,
+.output h3,
+.output h4 {
   color: purple;
 }
 
-.atividade p {
+.output p {
   font-size: 15px;
   text-align: left;
 }
 
-.atividade button {
+.output button {
   display: block;
   background-color: rgb(0 217 217 / 60%);
   border: 2px solid rgb(200 200 0 / 60%);
@@ -116,21 +122,6 @@
   margin: 8px auto;
   padding: 16px 24px;
   text-transform: uppercase;
-}
-
-dl {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
-}
-
-iframe {
-  border: none;
-  height: 400px;
-  width: 100%;
 }
 
 

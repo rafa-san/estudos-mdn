@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 104px auto 32px;
+  min-height: 80vh;
+  width: 95%;
+}
+
+.subdivisao {
+  border: 1px solid green;
+  margin: 16px auto;
+  width: 90%;
+}
+
+.subdivisao ol {
+  padding-left: 16px;
+}
+
+.titulo-subdivisao {
+  color: red;
+}
+
+ol li {
+  padding: 8px 0;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.link::after {
+  display: inline-block;
+  background-image: url('../images/arrow-up-right-from-square-solid.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  height: 16px;
+  margin-left: 8px;
+  vertical-align: middle;
+  width: 16px;
+}
+
+/* .external:after {
+  background-color: var(--icon-primary);
+  content: "";
+  display: inline-flex;
+  height: 10px;
+  margin-left: 4px;
+  mask-image: url("./assets/icons/external.svg");
+  mask-size: cover;
+  width: 10px;
+} */

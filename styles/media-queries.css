@@ -1,53 +1,11 @@
 @charset "utf-8";
 
-@media (min-width: 850px) {
-  /* HEADER */
-  .index-header {
-    justify-content: center;
-  }
-
-  header h1 {
-    text-align: center;
-  }
-
-  #menu-icone {
-    display: none;
-  }
-
-
-  /* INDEX */
-  .index-container {
-    display: flex;
+@media (min-width: 992px) {
+  .menu {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
-  .materia {
-    max-width: 50%;
-  }
-
-
-  /* MENU LATERAL */
-  #menu-lateral {
-    width: 340px;
-  }
-
-
-  /* CONTEÚDO: INTRODUÇÃO, EXEMPLOS E EXERCÍCIOS */
-  .container-principal {
-    margin-left: 340px;
-  }
-
-  
-  /* FOOTER */
-  .footer-index {
-    margin-left: 0;
-    width: 100%;
-  }
-
-  footer {
-    margin-left: 340px;
-    width: calc(100% - 340px);
+  .subdivisao {
+    margin: 16px 8px;
   }
 }

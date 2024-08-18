@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -11,8 +11,24 @@ a {
   text-decoration: none;
 }
 
-ul,
 ol {
-  list-style-position: inside;
+  display: block;
   list-style-type: none;
+  /* margin-top: 1em;
+  margin-bottom: 1em; */
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 8px;
 }
+
+ul {
+  display: block;
+  list-style-position: inside;
+  list-style-type: disc;
+  /* margin-top: 1em;
+  margin-bottom: 1em; */
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 8px;
+}
+
