@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test your skills 3</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h2>Test your skills 3</h2>
+
+    <p>The final task for now — in this case you are provided with some existing code, which has two errors present in it. The results panel should be outputting the name <code>Chris</code>, and a statement about how old Rafael will be in 20 years' time. How can you fix the problem and correct the output?</p>
+
+    <div class="starting-point">
+      <h2>Starting Point</h2>
+      <pre><code>// Add your code here<br />const myName = 'Default';<br />myName = 'Chris';<br /><br />let myAge = '42';</code></pre>
+    </div>
+
+    <div class="finished-task">
+      <h2>Finished Task</h2>
+      <pre><code>// Add your code here<br />let myName = 'Default';<br />myName = 'Chris';<br /><br />let myAge = '42';</code></pre>
+    </div>
+
+    <div class="output">
+      <h2>Output:</h2>
+      <section class="preview"></section>
+    </div>
+
+    <script>
+      // Add your code here
+      let myName = 'Default';
+      myName = 'Chris';
+
+      let myAge = 42;
+
+      // Don't edit the code below here!
+      const section = document.querySelector('section');
+
+      const para1 = document.createElement('p');
+      const para2 = document.createElement('p');
+      para1.textContent = myName;
+      para2.textContent = `In 20 years, I will be ${myAge + 20}`;
+      section.appendChild(para1);
+      section.appendChild(para2);
+    </script>
+  </body>
+</html>

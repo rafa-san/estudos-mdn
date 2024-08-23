@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test your skills 2</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h2>Test your skills 2</h2>
+
+    <p>In the second task, you are provided with two calculations with the results stored in the variables <code>result</code> and <code>result2</code>. You need to take the calculations, multiply them, and format the result to two decimal places.</p>
+    <p>Try updating the live code below to recreate the finished example by following these steps:</p>
+    <ol>
+      <li>Multiply <code>result</code> and <code>result2</code> and assign the result back to <code>result</code> (use assignment shorthand).</li>
+      <li>Format <code>result</code> so that it has two decimal places and store it in a variable called <code>finalResult</code>.</li>
+      <li>Check the data type of <code>finalResult</code> using <code>typeof</code>. If it's a <code>string</code>, convert it to a <code>number</code> type and store the result in a variable called <code>finalNumber</code>.</li>
+    </ol>
+    <p>To pass this test, <code>finalNumber</code> should have a result of <code>4633.33</code>.</p>
+
+    <div class="starting-point">
+      <h2>Starting Point</h2>
+      <pre><code>// Final result should be 4633.33 <br />// Add/update your code here <br /> <br />let result = 7 + 13 / 9 + 7; <br />let result2 = 100 / 2 * 6;</code></pre>
+    </div>
+
+    <div class="finished-task">
+      <h2>Finished Task</h2>
+      <pre><code>// Final result should be 4633.33 <br />// Add/update your code here <br /> <br />let result = 7 + 13 / 9 + 7; <br />let result2 = 100 / 2 * 6; <br />let finalNumber; <br /> <br />result *= result2; <br />let finalResult = result.toFixed(2); <br /> <br />if (typeof finalResult === 'string') { <br /> finalNumber = Number(finalResult); <br />}</code></pre>
+    </div>
+    
+    <div class="output">
+      <h2>Output:</h2>
+      <section class="preview"></section>
+    </div>
+
+    <script>
+      // Final result should be 4633.33
+      // Add/update your code here
+      let result = 7 + 13 / 9 + 7;
+      let result2 = 100 / 2 * 6;
+      let finalNumber;
+
+      result *= result2;
+      let finalResult = result.toFixed(2);
+
+      if (typeof finalResult === 'string') {
+          finalNumber = Number(finalResult);
+      }
+
+      // Don't edit the code below here!
+      const section = document.querySelector('section');
+      const para1 = document.createElement('p');
+      para1.textContent = `Your finalResult is ${ finalResult }`;
+      const para2 = document.createElement('p');
+      const finalNumberCheck = typeof finalNumber === 'number' ? 'finalNumber is a number type. Well done!' : `Ooops! finalNumber is not a number.`;
+      para2.textContent = finalNumberCheck;
+
+      section.appendChild(para1);
+      section.appendChild(para2);
+    </script>
+  </body>
+</html>
