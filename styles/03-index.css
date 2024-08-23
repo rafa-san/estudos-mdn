@@ -46,13 +46,8 @@ a:hover {
   width: 16px;
 }
 
-/* .external:after {
-  background-color: var(--icon-primary);
-  content: "";
-  display: inline-flex;
-  height: 10px;
-  margin-left: 4px;
-  mask-image: url("./assets/icons/external.svg");
-  mask-size: cover;
-  width: 10px;
-} */
+.link::before,
+.sem-link::before {
+  content: "\21AA";
+  padding-right: 0.5em;
+}
