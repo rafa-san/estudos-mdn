@@ -83,6 +83,15 @@ iframe {
   width: 100%;
 }
 
+pre {
+  border: 1px solid red;
+  display: block;
+  font-family: monospace;
+  /* white-space: pre-wrap; */
+  white-space: pre-line;
+  margin: 1em 0;
+}
+
 .atividade {
   background-color: #faf8f5;
   border: 3px solid #efece9;
