@@ -1,5 +1,5 @@
 Onde parei:
 
 JS
-  .storing the information you need
-    .test your skills 2
+  .Useful string methods
+    .Strings as objects
