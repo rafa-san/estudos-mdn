@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test your skills 3</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h2>Test your skills 3</h2>
+
+    <p>In the final task for this article, we want you to write some tests. There are three groups, each consisting of a statement and two variables. For each one, write a test that proves or disproves the statement made. Store the results of those tests in variables called <code>weightComparison</code>, <code>heightComparison</code>, and <code>pwdMatch</code>, respectively.</p>
+
+    <div class="starting-point">
+      <h2>Starting Point</h2>
+      <pre><code>// Statement 1: The elephant weighs less than the mouse<br />const eleWeight = 1000;<br />const mouseWeight = 2;<br /><br />// Statement 2: The Ostrich is taller than the duck<br />const ostrichHeight = 2;<br />const duckHeight = 0.3;<br /><br />// Statement 3: The two passwords match<br />const pwd1 = 'stromboli';<br />const pwd2 = 'stROmBoLi';<br /><br />// Add your code here</code></pre>
+    </div>
+
+    <div class="finished-task">
+      <h2>Finished Task</h2>
+      <pre><code>// Statement 1: The elephant weighs less than the mouse<br />const eleWeight = 1000;<br />const mouseWeight = 2;<br /><br />// Statement 2: The Ostrich is taller than the duck<br />const ostrichHeight = 2;<br />const duckHeight = 0.3;<br /><br />// Statement 3: The two passwords match<br />const pwd1 = 'stromboli';<br />const pwd2 = 'stROmBoLi';<br />
+      // Add your code here
+      const weightComparison = eleWeight < mouseWeight;
+      const heightComparison = ostrichHeight > duckHeight;
+      const pwdMatch = pwd1 === pwd2;
+      </code></pre>
+    </div>
+    
+    <div class="output">
+      <h2>Output:</h2>
+      <section class="preview"></section>
+    </div>
+
+    <script>
+      // Statement 1: The elephant weighs less than the mouse
+      const eleWeight = 1000;
+      const mouseWeight = 2;
+
+      // Statement 2: The Ostrich is taller than the duck
+      const ostrichHeight = 2;
+      const duckHeight = 0.3;
+
+      // Statement 3: The two passwords match
+      const pwd1 = 'stromboli';
+      const pwd2 = 'stROmBoLi';
+
+      // Add your code here
+      const weightComparison = eleWeight < mouseWeight;
+      const heightComparison = ostrichHeight > duckHeight;
+      const pwdMatch = pwd1 === pwd2;
+
+      // Don't edit the code below here!
+
+      const section = document.querySelector('section');
+      const para1 = document.createElement('p');
+      const para2 = document.createElement('p');
+      const para3 = document.createElement('p');
+
+      const weightTest = weightComparison ? 'True — elephants weigh less than mice!?' : 'False — of course an elephant is heavier than a mouse!';
+      const heightTest = heightComparison ? 'True — an ostrich is indeed taller than a duck!' : 'False — apparently a duck is taller than an ostrich!?';
+      const pwdTest = pwdMatch ? 'True — the passwords match.' : 'False — the passwords do not match; please check them';
+
+      para1.textContent = weightTest;
+      section.appendChild(para1);
+      para2.textContent = heightTest;
+      section.appendChild(para2);
+      para3.textContent = pwdTest;
+      section.appendChild(para3);
+    </script>
+  </body>
+</html>

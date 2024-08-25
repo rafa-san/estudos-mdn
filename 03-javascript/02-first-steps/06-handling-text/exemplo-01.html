@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling text — strings in JavaScript - Exemplo 01</title>
+    <style>
+      #greeting {
+        margin-top: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Exemplo 01 - Concatenation in context</h2>
+
+    <div class="atividade">
+      <button>Press me</button>
+      <div id="greeting"></div>
+    </div>
+
+  <script>
+    const button = document.querySelector("button");
+
+    function greet() {
+      const name = prompt("What is your name?");
+      const greeting = document.querySelector("#greeting");
+      greeting.textContent = `Hello, ${name}, nice to see you!`;
+    }
+
+    button.addEventListener("click", greet);
+  </script>
+  </body>
+</html>
