@@ -1,5 +1,5 @@
 Onde parei:
 
 JS
-  .Useful string methods
-    .Strings as objects
+  . Useful string methods
+    . Test your skills
