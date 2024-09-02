@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+:root {
+  --color1: rgb(75, 85, 161);
+  --color2: rgb(250, 229, 214);
+  --color3: rgb(232, 66, 67);
+  --color4: rgb(205, 228, 241);
+}
+
 * {
   box-sizing: border-box;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,8 +21,8 @@ a {
 ol {
   display: block;
   list-style-type: none;
-  /* margin-top: 1em;
-  margin-bottom: 1em; */
+  margin-top: 1em;
+  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
   padding-left: 8px;
@@ -25,8 +32,8 @@ ul {
   display: block;
   list-style-position: inside;
   list-style-type: disc;
-  /* margin-top: 1em;
-  margin-bottom: 1em; */
+  margin-top: 1em;
+  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
   padding-left: 8px;

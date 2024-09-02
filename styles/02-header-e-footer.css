@@ -2,25 +2,31 @@
 
 /* HEADER */
 header {
-  position: fixed;
-  top: 0;
-  background-color: lightgray;
-  padding: 24px 8px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.192);
+  padding: 8px;
   text-align: center;
   width: 100%;
-  z-index: 1;
+}
+
+header a {
+  color: var(--color1);
+}
+
+header a:hover {
+  text-decoration: none;
 }
 
 
 /* FOOTER */
 footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: var(--color3);
   padding: 32px 8px;
   text-align: center;
   width: 100%;
 }
 
 footer p {
+  color: #fff;
   font-size: 1.1em;
   text-align: center;
 }
@@ -30,6 +36,10 @@ footer p {
   gap: 16px;
   justify-content: center;
   margin: 16px 0;
+}
+
+.contato a {
+  color: #fff;
 }
 
 .fa-github,
@@ -45,7 +55,7 @@ footer p {
 }
 
 .texto-icone {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--fonte-monospace);
   font-size: 1.1em;
   word-spacing: 2px;
 }

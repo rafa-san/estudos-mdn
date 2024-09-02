@@ -3,13 +3,14 @@
 .menu {
   display: flex;
   flex-direction: column;
-  margin: 104px auto 32px;
-  min-height: 80vh;
+  margin: 32px auto;
+  min-height: 65vh;
   width: 95%;
 }
 
 .subdivisao {
-  border: 1px solid green;
+  border: 2px ridge var(--color3);
+  border-radius: 8px;
   margin: 16px auto;
   width: 90%;
 }
@@ -19,7 +20,13 @@
 }
 
 .titulo-subdivisao {
-  color: red;
+  display: block;
+  color: var(--cor3);
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-right: 8px;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 ol li {
