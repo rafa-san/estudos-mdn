@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Learning 03</title>
+    <style>
+      pre {
+        background-color: #34343421;
+        border: 1px solid red;
+        display: block;
+        font-family: monospace;
+        white-space: pre-line;
+        word-wrap: break-word;
+        margin: 1em 0;
+      }
+
+      .notecard {
+        --note-background: #0085f21a;
+        --note-theme: #5e9eff;
+        background-color: #0085f21a;
+        border-left: 2px solid #5e9eff;
+        border-radius: var(--elem-radius);
+        box-shadow: 0 1px 2px #fbfbfe33;;
+        margin: 1rem 0;
+        padding: 1rem 1rem 1rem 3rem;
+        position: relative;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Exemplo 03</h1>
+
+    <h2>Making new strings from old parts</h2>
+
+    <p>In this last exercise, the array contains a bunch of strings containing information about train stations in the North of England. The strings are data items that contain the three-letter station code, followed by some machine-readable data, followed by a semicolon, followed by the human-readable station name. For example:</p>
+
+    <pre class="brush: plain notranslate">MAN675847583748sjt567654;Manchester Piccadilly
+    </pre>
+
+    <p>We want to extract the station code and name, and put them together in a string with the following structure:</p>
+
+    <pre class="brush: plain notranslate">MAN: Manchester Piccadilly
+    </pre>
+    
+    <p>We'd recommend doing it like this:</p>
+
+    <ol>
+      <li>Extract the three-letter station code and store it in a new variable.</li>
+      <li>Find the character index number of the semicolon.</li>
+      <li>Extract the human-readable station name using the semicolon character index number as a reference point, and store it in a new variable.</li>
+      <li>Concatenate the two new variables and a string literal to make the final string.</li>
+      <li>Change the value of the <code>result</code> variable to the final string, not the <code>station</code>.</li>
+    </ol>
+
+    <hr>
+
+    <div class="starting-point">
+      <h2>Starting Point</h2>
+      <pre><code>
+        const list = document.querySelector('.output ul');
+        list.textContent = "";
+        const stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
+                          'GNF576746573fhdg4737dh4;Greenfield',
+                          'LIV5hg65hd737456236dch46dg4;Liverpool Lime Street',
+                          'SYB4f65hf75f736463;Stalybridge',
+                          'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
+        
+        for (const station of stations) {
+          // write your code just below here
+        
+          const result = station;
+          const listItem = document.createElement('li');
+          listItem.textContent = result;
+          list.appendChild(listItem);
+        }
+      </code></pre>
+    </div>
+  
+    <div class="finished-task">
+      <h2>Finished Task</h2>
+      <pre><code>
+        const list = document.querySelector('.output ul');
+        list.textContent = "";
+        const stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
+                          'GNF576746573fhdg4737dh4;Greenfield',
+                          'LIV5hg65hd737456236dch46dg4;Liverpool Lime Street',
+                          'SYB4f65hf75f736463;Stalybridge',
+                          'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
+    
+        for (const station of stations) {
+          // write your code just below here
+    
+          <mark>const threeLetter = station.slice(0, 3);
+          const semiColon = station.indexOf(";");
+          const stationName = station.slice(semiColon + 1);
+    
+          const result = `${threeLetter}: ${stationName}`;</mark>
+          const listItem = document.createElement('li');
+          listItem.textContent = result;
+          list.appendChild(listItem);
+        }
+      </code></pre>
+    </div>
+    
+    <div class="output">
+      <h2>Output:</h2>
+      <ul></ul>
+      <section class="preview"></section>
+    </div>
+
+  <script>
+    const list = document.querySelector('.output ul');
+    list.textContent = "";
+    const stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
+                      'GNF576746573fhdg4737dh4;Greenfield',
+                      'LIV5hg65hd737456236dch46dg4;Liverpool Lime Street',
+                      'SYB4f65hf75f736463;Stalybridge',
+                      'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
+
+    for (const station of stations) {
+      // write your code just below here
+
+      const threeLetter = station.slice(0, 3);
+      const semiColon = station.indexOf(";");
+      const stationName = station.slice(semiColon + 1);
+
+      const result = `${threeLetter}: ${stationName}`;
+      const listItem = document.createElement('li');
+      listItem.textContent = result;
+      list.appendChild(listItem);
+    }
+  </script>
+  </body>
+</html>

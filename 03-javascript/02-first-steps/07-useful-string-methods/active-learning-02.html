@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Learning 02</title>
+    <style>
+      pre {
+        border: 1px solid red;
+        display: block;
+        font-family: monospace;
+        white-space: pre-line;
+        margin: 1em 0;
+      }
+
+      .notecard {
+        --note-background: #0085f21a;
+        --note-theme: #5e9eff;
+        background-color: #0085f21a;
+        border-left: 2px solid #5e9eff;
+        border-radius: var(--elem-radius);
+        box-shadow: 0 1px 2px #fbfbfe33;;
+        margin: 1rem 0;
+        padding: 1rem 1rem 1rem 3rem;
+        position: relative;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Exemplo 02</h1>
+
+    <h2>Fixing capitalization</h2>
+
+    <p>In this exercise, we have the names of cities in the United Kingdom, but the capitalization is all messed up. We want you to change them so that they are all lowercase, except for a capital first letter. A good way to do this is to:</p>
+
+    <ol>
+      <li>Convert the whole of the string contained in the <code>city</code> variable to lowercase and store it in a new variable.</li>
+      <li>Grab the first letter of the string in this new variable and store it in another variable.</li>
+      <li>Using this latest variable as a substring, replace the first letter of the lowercase string with the first letter of the lowercase string changed to upper case. Store the result of this replacement procedure in another new variable.</li>
+      <li>Change the value of the <code>result</code> variable to equal to the final result, not the <code>city</code>.</li>
+    </ol>
+
+    <div class="notecard note" id="sect4">
+      <p><strong>Note:</strong> A hint — the parameters of the string methods don't have to be string literals; they can also be variables, or even variables with a method being invoked on them.</p>
+    </div>
+
+    <div class="starting-point">
+      <h2>Starting Point</h2>
+      <pre><code>
+        const list = document.querySelector('.output ul');
+        list.textContent = "";
+        const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+        
+        for (const city of cities) {
+          // write your code just below here
+        
+          const result = city;
+          const listItem = document.createElement('li');
+          listItem.textContent = result;
+          list.appendChild(listItem);
+        }
+      </code></pre>
+    </div>
+  
+    <div class="finished-task">
+      <h2>Finished Task</h2>
+      <pre><code>
+        const list = document.querySelector('.output ul');
+        list.textContent = "";
+        const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+    
+        for (const city of cities) {
+          // write your code just below here
+          <mark>const lower = city.toLowerCase();
+          const firstLetter = lower.slice(0,1);
+          const capitalized = lower.replace(firstLetter,firstLetter.toUpperCase());
+          
+          const result = capitalized;</mark>
+          const listItem = document.createElement('li');
+          listItem.textContent = result;
+          list.appendChild(listItem);
+        }
+      </code></pre>
+    </div>
+    
+    <div class="output">
+      <h2>Output:</h2>
+      <ul></ul>
+      <section class="preview"></section>
+    </div>
+
+  <script>
+    const list = document.querySelector('.output ul');
+    list.textContent = "";
+    const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+
+    for (const city of cities) {
+      // write your code just below here
+      const lower = city.toLowerCase();
+      const firstLetter = lower.slice(0,1);
+      const capitalized = lower.replace(firstLetter,firstLetter.toUpperCase());
+
+      const result = capitalized;
+      const listItem = document.createElement('li');
+      listItem.textContent = result;
+      list.appendChild(listItem);
+    }
+  </script>
+  </body>
+</html>
