@@ -1,10 +1,12 @@
 @charset "utf-8";
 
 :root {
-  --color1: rgb(75, 85, 161);
-  --color2: rgb(250, 229, 214);
-  --color3: rgb(232, 66, 67);
-  --color4: rgb(205, 228, 241);
+  --black: #000;
+  --white: #fff;
+  --color1: #1B0112;
+  --color2: #5A0834;
+  --color3: #9D0B51;
+  --color4: #E44EC3;
 }
 
 * {
