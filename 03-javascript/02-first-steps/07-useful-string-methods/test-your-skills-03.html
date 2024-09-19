@@ -3,29 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test your skills 1</title>
+    <title>Test your skills 3</title>
     <link rel="stylesheet" href="../../../styles/04-atividades.css" />
   </head>
 
 <body>
-  <h1>Test your skills 1</h1>
+  <h1>Test your skills 3</h1>
 
-  <p>In this task we want you to:</p>
+  <p>In the next string task, you are given the same quote that you ended up with in the previous task, but it is somewhat broken! We want you to fix and update it, like so:</p>
 
-  <ul>
-    <li>Declare a variable called <code>myName</code>.</li>
-    <li>Initialize <code>myName</code> with a suitable value, on a separate line (you can use your actual name, or something else).</li>
-    <li>Declare a variable called <code>myAge</code> and initialize it with a value, on the same line.</li>
-  </ul>
+  <ol>
+    <li>Change the casing to correct sentence case (all lowercase, except for upper case first letter). Store the new quote in a variable called <code>fixedQuote</code>.</li>
+    <li>In <code>fixedQuote</code>, replace "green eggs and ham" with another food that you really don't like.</li>
+    <li>There is one more small fix to do — add a period to the end of the quote, and save the final version in a variable called <code>finalQuote</code>.</li>
+  </ol>
 
   <div class="starting-point">
     <h2>Starting Point</h2>
-    <pre><code>// Add your code here</code></pre>
+    <pre><code>
+      const quote = 'I dO nOT lIke gREen eGgS anD HAM';
+
+      // Add your code here
+
+    </code></pre>
   </div>
 
   <div class="finished-task">
     <h2>Finished Task</h2>
-    <pre><code>// Add your code here<br />let myName;<br />myName = 'Rafael';<br />const myAge = 40;</code></pre>
+    <pre><code>
+    const quote = 'I dO nOT lIke gREen eGgS anD HAM';
+
+    // Add your code here
+    let fixedQuote = `${quote[0].toUpperCase()} ${quote.slice(1).toLowerCase()}`;
+    let finalQuote = `${fixedQuote.replace("green eggs and ham", "chicken and coca-cola")}.`;
+
+    </code></pre>
   </div>
   
   <div class="output">
@@ -34,17 +46,22 @@
   </div>
 
   <script>
+    const quote = 'I dO nOT lIke gREen eGgS anD HAM';
+
     // Add your code here
-    let myName;
-    myName = 'Rafael';
-    const myAge = 40;
+    let fixedQuote = `${quote[0].toUpperCase()} ${quote.slice(1).toLowerCase()}`;
+    let finalQuote = `${fixedQuote.replace("green eggs and ham", "chicken and coca-cola")}`;
+
+    if (!finalQuote.endsWith(".")) {
+      finalQuote = `${finalQuote}.`
+    }
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
     const para1 = document.createElement('p');
-    para1.textContent = myName;
+    para1.textContent = fixedQuote;
     const para2 = document.createElement('p');
-    para2.textContent = myAge;
+    para2.textContent = finalQuote;
 
     section.appendChild(para1);
     section.appendChild(para2);

@@ -3,29 +3,64 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test your skills 1</title>
+    <title>Test your skills 2</title>
     <link rel="stylesheet" href="../../../styles/04-atividades.css" />
   </head>
 
 <body>
-  <h1>Test your skills 1</h1>
+  <h1>Test your skills 2</h1>
 
-  <p>In this task we want you to:</p>
+  <p>In this task you are provided with two variables, <code>quote</code> and <code>substring</code>, which contain two strings. We would like you to:</p>
 
-  <ul>
-    <li>Declare a variable called <code>myName</code>.</li>
-    <li>Initialize <code>myName</code> with a suitable value, on a separate line (you can use your actual name, or something else).</li>
-    <li>Declare a variable called <code>myAge</code> and initialize it with a value, on the same line.</li>
-  </ul>
+  <ol>
+    <li>Retrieve the length of the quote, and store it in a variable called <code>quoteLength</code>.</li>
+    <li>Find the index position where <code>substring</code> appears in <code>quote</code>, and store that value in a variable called <code>index</code>.</li>
+    <li>Use a combination of the variables you have and available string properties/methods to trim down the original quote to "I do not like green eggs and ham.", and store it in a variable called <code>revisedQuote</code>.</li>
+  </ol>
 
   <div class="starting-point">
     <h2>Starting Point</h2>
-    <pre><code>// Add your code here</code></pre>
+    <pre><code>
+      const quote = 'I do not like green eggs and ham. I do not like them, Sam-I-Am.';
+      const substring = 'green eggs and ham';
+
+      // Add your code here
+
+      // Don't edit the code below here!
+
+      section.innerHTML = ' ';
+      const para1 = document.createElement('p');
+      para1.textContent = `The quote is ${ quoteLength } characters long.`;
+      const para2 = document.createElement('p');
+      para2.textContent = revisedQuote;
+
+      section.appendChild(para1);
+      section.appendChild(para2);
+    </code></pre>
   </div>
 
   <div class="finished-task">
     <h2>Finished Task</h2>
-    <pre><code>// Add your code here<br />let myName;<br />myName = 'Rafael';<br />const myAge = 40;</code></pre>
+    <pre><code>
+      const quote = 'I do not like green eggs and ham. I do not like them, Sam-I-Am.';
+      const substring = 'green eggs and ham';
+
+      // Add your code here
+      <mark>const quoteLength = quote.length;
+      const index = quote.indexOf(substring);
+      const revisedQuote = quote.slice(0, index + substring.length + 1);</mark>
+
+      // Don't edit the code below here!
+
+      section.innerHTML = ' ';
+      const para1 = document.createElement('p');
+      para1.textContent = `The quote is ${ quoteLength } characters long.`;
+      const para2 = document.createElement('p');
+      para2.textContent = revisedQuote;
+
+      section.appendChild(para1);
+      section.appendChild(para2);
+    </code></pre>
   </div>
   
   <div class="output">
@@ -34,17 +69,37 @@
   </div>
 
   <script>
+    const quote = 'I do not like green eggs and ham. I do not like them, Sam-I-Am.';
+    const substring = 'green eggs and ham';
+
     // Add your code here
-    let myName;
-    myName = 'Rafael';
-    const myAge = 40;
+    const quoteLength = quote.length; // tamanho total da frase = 63
+    const index = quote.indexOf(substring); // index do início da substring: 14
+
+    // console.log(substring.length); // Tamanho total da substring: 18
+    const revisedQuote = quote.slice(0, index + substring.length + 1);
+
+    // Na resolução acima, 0 é o início do "corte". Depois da vírgula começa a expressão do segundo parâmetro, que quer dizer o seguinte: pegue o index (início = 14) e some a ele o valor de 18 (tamanho da substring), o que vai dar 32. Por fim, some mais 1 a esse valor.
+
+    //console.log(quote.slice(0, 14 + 18 + 1)); // I do not like green eggs and ham.
+    // ou
+    //console.log(quote.slice(0, 32 + 1)); // I do not like green eggs and ham.
+    // ou
+    console.log(quote.slice(0, index + substring.length + 1)); // I do not like green eggs and ham.
+
+
+    // Outra solução
+    const pontoFinal = quote.indexOf(".");
+    const fraseCompleta = quote.slice(0, pontoFinal + 1);
+    //console.log(fraseCompleta);
+
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
     const para1 = document.createElement('p');
-    para1.textContent = myName;
+    para1.textContent = `The quote is ${ quoteLength } characters long.`;
     const para2 = document.createElement('p');
-    para2.textContent = myAge;
+    para2.textContent = revisedQuote;
 
     section.appendChild(para1);
     section.appendChild(para2);
